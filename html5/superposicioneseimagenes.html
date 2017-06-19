@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Transformaciones</title>
+<style>
+#lienzo{
+border:1px dashed #000;
+}
+</style>
+<script>
+function comenzar(){
+var elemento=document.getElementById("lienzo");
+lienzo=elemento.getContext("2d");
+/*lienzo.fillStyle="#880000";
+lienzo.fillRect(400,250,300,100);
+//lienzo.globalCompositeOperation="destination-atop";
+//lienzo.globalCompositeOperation="source-in";
+lienzo.globalCompositeOperation="source-out";
+lienzo.fillStyle="#AAAAFF";
+lienzo.font="bold 80px verdana";
+lienzo.textAlign="center";
+lienzo.textBaseline="middle";
+lienzo.fillText("Hola bola",550,300);*/
+var imagen=new Image();
+//imagen.src="http://www.pildorasinformaticas.com/archivos/logos/html5online.jpg";
+imagen.src="imagenes/1.jpg";
+imagen.addEventListener("load",function(){
+
+//lienzo.drawImage(imagen,0,0,elemento.width,elemento.height)},false);
+lienzo.drawImage(imagen,50,10,75,75,0,0,300,300)},false);
+}
+
+window.addEventListener("load",comenzar,false);
+</script>
+</head>
+<body>
+<section>
+<canvas width="1200" height="900" id="lienzo">
+su navegador no soporta canvas
+</canvas>
+</section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Formulario</title>
+</head>
+<body>
+<section>
+<form name="miformulario" id="miformulario" method="get" autocomplete="off">
+Email:&nbsp;<input type="email" name="email" id="email" required multiple><br><br>
+Buscar:&nbsp;<input type="search" name="buscar" id="buscar"><br><br>
+Url:&nbsp;<input type="url" name="url" id="url" autofocus><br><br>
+
+Edad:&nbsp;<input type="range" name="edad" id="edad" min="5" max="105"><br><br>
+Fecha:&nbsp;<input type="time" name="fecha" id="fecha"><br><br>
+C postal:&nbsp;<input pattern="[0-9]{5}" name="cpostal" id="cpostal" placeholder="5 digitos"><br><br>
+<input type="submit" value="Enviar"><br><br>
+
+</form>
+</section>
+<img src="imagenes/1.jpg" width="200" height="200">
+<br>
+Nombre:&nbsp;<input type="text" name="nombre" id="nombre" form="miformulario">
+</body>
+<html>

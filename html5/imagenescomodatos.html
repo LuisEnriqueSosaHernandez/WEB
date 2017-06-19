@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Transformaciones</title>
+<style>
+#lienzo{
+border:1px dashed #000;
+}
+</style>
+<script>
+function comenzar(){
+var elemento=document.getElementById("lienzo");
+lienzo=elemento.getContext("2d");
+var imagen=new Image();
+imagen.src="imagenes/1.jpg";
+imagen.addEventListener("load",manipularimagen,false);
+}
+function manipularimagen(e){
+imagen=e.target;
+lienzo.drawImage(imagen,0,0);
+var info_imagen=lienzo.getImageData(0,0,200,200);
+var posicion;
+for(x=0;x<=200;x++){
+for(y=0;y<=200;y++){
+posicion=(info_imagen.width*4*y)+(x*4);
+info_imagen.data[posicion]=255-info_imagen.data[posicion];
+info_imagen.data[posicion+1]=255-info_imagen.data[posicion+1];
+info_imagen.data[posicion+2]=255-info_imagen.data[posicion+2];
+}
+}
+lienzo.putImageData(info_imagen,300,300);
+}
+
+window.addEventListener("load",comenzar,false);
+</script>
+</head>
+<body>
+<section>
+<canvas width="1200" height="900" id="lienzo">
+su navegador no soporta canvas
+</canvas>
+</section>
+</body>
+</html>

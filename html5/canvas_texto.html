@@ -1,0 +1,43 @@
+<DOCTYPE HTML>
+<html>
+<head>
+<title>Canvastexto</title>
+<style>
+section{
+width:800px;
+position:relative;
+margin:auto;
+}
+#lienzo{
+border:1px dashed #000;
+}
+</style>
+<script>
+function comenzar(){
+var elemento=document.getElementById("lienzo");
+lienzo=elemento.getContext("2d");
+lienzo.shadowColor="rgba(0,0,0,0.5)";
+lienzo.shadowOffsetX=3;
+lienzo.shadowOffsetY=4;
+lienzo.shadowBlur=5;
+lienzo.font="bold 48px verdana";
+lienzo.textAling="start";
+//lienzo.textAling="end";
+lienzo.textBaseline="top";
+//lienzo.textBaseline="botton";
+lienzo.fillText("Holi boli",100,100);
+//lienzo.moveTo(100,100);
+//lienzo.lineTo(200,100);
+var dimensiones=lienzo.measureText("Holi boli");
+//lienzo.strokeRect(100,100,dimensiones.width+10,58);
+}
+window.addEventListener("load",comenzar,false);
+</script>
+</head>
+<body>
+<section>
+<canvas width="800" height="600" id="lienzo">
+</canvas>
+</section>
+</body>
+</html>

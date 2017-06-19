@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+}
+#lado_izquierdo{
+	width: 60%;
+	padding: 50px;
+	background-color: red;
+}
+#lado_derecho{
+width: 30%;
+
+background-color: pink;
+}
+
+#lado_izquierdo ,#lado_derecho{
+	display: inline-block;
+}
+div{
+	margin-top: 10px;
+	text-align: center;
+}

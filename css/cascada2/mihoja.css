@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/05/2015, 08:27:00 PM
+    Author     : luisenrique
+*/
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,addrees,form,fieldset{       
+padding: 0;
+margin: 0;
+font-size: 100%;
+font-weight: normal;
+}
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+ul{
+    margin-left: 1.4em;
+    list-style: square;
+}
+img{
+    border: 0;
+}
+/*termina el reset css*/
+#principal{
+    float: left;
+    width: 580px;
+}
+#lateral{
+    margin-left: 600px;
+    padding: 15px;
+    background:#ffccff;
+}
+body{
+    color:#330033;
+    font-family: "Palatino Linotype",serif;
+    padding-top: 100px;
+    background: #ffccff url(images/fondo_cuerpo.png)repeat-x;
+    width: 800px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3em;
+    font-family: "Arial Black",sans-serif;
+}
+h2{
+    font-size: 2.2em;
+    color: #990099;
+    margin-bottom: 5px;
+}
+#principal h2{
+    color:#cc00cc;
+    border-bottom:2px #ffffff solid;
+    background: url(images/flor.png) no-repeat;
+    padding:0 0 2px 50px;
+    
+   }
+   #principal p{
+       color:#cc0066;
+       font-family: "Palatino Linotype",Palatino,serif;
+       font-size: 1em;
+       line-height: 150%;
+       margin-bottom: 10px;
+       margin-left: 50px;
+   
+           
+       
+   }
+   #principal .Introduccion{
+       color: #000000;
+       font-family: Arial,sans-serif;
+       font-size: 1.2em;
+       margin-left: 0px;
+       margin-bottom: 20px;
+   }
+
+

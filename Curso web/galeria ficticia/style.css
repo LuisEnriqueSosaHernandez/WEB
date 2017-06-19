@@ -1,0 +1,52 @@
+body{
+	background-color: black;
+}
+img:hover{
+padding: 0 10px 10px 10px;
+
+}
+
+div{
+	padding-left: 1%;
+	border-radius: 5%;
+	display: inline-block;
+	width: 28%;
+	margin: 0 1.5%;
+	text-align: center;
+	margin:0 1.5% 1.5% 1.5%;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(33,107,65,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(33,107,65,1);
+box-shadow: 10px 10px 5px 0px rgba(33,107,65,1);
+border: solid 2px gray;
+}
+h1{
+	color: black;
+	color: white;
+	border-radius: 1.5%;
+	background-color: rgba(33,107,65,1);
+	
+}
+#titulo{
+border:solid 2px white;
+	color: white;
+	text-align: center;
+}
+div h1{
+margin-left: 2%;
+margin-right: 2%;
+}
+div img{
+	border-radius: 2%;
+	width: 99%;
+	
+}
+@media screen and (max-width: 785px) {
+	div{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 585px) {
+	div{
+		width: 90%;
+	}
+}

@@ -1,0 +1,25 @@
+h1{
+background:yellow;
+text-align:center;
+color:blue;
+}
+p{
+color:rgba(0,0,0,.5);
+font-family:arial,helvetica,sans-serif,"century";
+font-size:20px;
+font-weight:normal;
+text-align:justify;
+line-height:20px;
+//text-decoration:underline;
+//text-decoration:overline;
+//text-decoration:line-through;
+//text-transform:capitalize;
+//text-transform:uppercase;
+//text-transform:lowercase;
+//letter-spacing:20px;
+word-spacing:20px;
+text-shadow:1px 1px 0px #000;
+}
+a{
+text-decoration:none;
+}

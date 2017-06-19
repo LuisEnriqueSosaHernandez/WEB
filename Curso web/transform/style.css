@@ -1,0 +1,12 @@
+img{
+	width: 200px;
+	height: 200px;
+	transition:2s ease;
+	-moz-transition: 2.5s ease; /* Firefox */
+ 	-webkit-transition: 2.5s ease; /* Chrome - Safari */
+ 	-o-transition: 2.5s ease; /* Opera */
+}
+img:hover{
+transform:rotate(360deg);
+//transform:translate(300px,300px);
+}

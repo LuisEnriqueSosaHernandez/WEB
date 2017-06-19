@@ -1,0 +1,28 @@
+#content{
+	background-color: red;
+}
+@media screen and(max-width: 680px) {
+	#content{
+		background-color: blue !important;
+		color: green;
+	}
+}
+@media  screen and (max-width: 990px) {
+	#content{
+		background-color: yellow;
+	}
+	nav ul li{
+		display: block !important;
+		min-width: 100%;
+		text-align: center;
+	}
+}
+nav ul li{
+	display: inline-block;
+	width: 20%;
+	background-color: red;
+	font-size: 20px;
+}
+*{
+	margin: 0px;
+}

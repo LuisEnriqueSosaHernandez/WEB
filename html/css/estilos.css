@@ -1,0 +1,56 @@
+h1{
+color:aqua;
+}
+h1{
+font-size:50px;
+
+}
+h2{
+font-size:40px;
+color:rgba(59,72,102,.5);
+}
+p{
+color:#DC5EAE;
+}
+p a{
+color:rgb(178%,66%,90%);
+font-size:20px;
+}
+span{
+color:rgb(green);
+}
+p .yellow{
+}
+a[href="https://www.google.com.mx/"]{
+color:green;
+font-size:30px;
+}
+body{
+font-size:20px;
+background:url(../imagenes/23002_adventure_time.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-position:center 0;
+}
+p{
+font-size:1em;
+}
+div{
+font-size:20px;
+//background:orange;
+background:url(../imagenes/23002_adventure_time.jpg);
+color:#fff;
+width:50%;
+height:200px;
+margin:20px 50px;
+padding:30px;
+border:10px dotted /*solid*/ #000;
+display:inline-block;
+}
+div p{
+background:url(../imagenes/23002_adventure_time.jpg);
+height:300px;
+background-attachment:fixed;
+background-repeat:no-repeat;
+font-size:1em;
+}

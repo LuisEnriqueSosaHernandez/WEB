@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/05/2015, 09:56:41 PM
+    Author     : luisenrique
+*/
+
+#zonadatos{
+    width: 800px;
+    height: 800px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px dotted #ff0033;
+    text-align: center;
+}
+

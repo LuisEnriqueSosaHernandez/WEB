@@ -1,0 +1,143 @@
+* {
+	margin:0;
+	padding:0;
+}
+body{
+	background: rgba(73,155,234,1);
+	background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(47,136,231,0.35) 49%, rgba(32,124,229,0.35) 78%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(49%, rgba(47,136,231,0.35)), color-stop(78%, rgba(32,124,229,0.35)));
+	background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(47,136,231,0.35) 49%, rgba(32,124,229,0.35) 78%);
+	background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(47,136,231,0.35) 49%, rgba(32,124,229,0.35) 78%);
+	background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(47,136,231,0.35) 49%, rgba(32,124,229,0.35) 78%);
+	background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(47,136,231,0.35) 49%, rgba(32,124,229,0.35) 78%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+	font-family:century;
+}
+
+img{
+	border-radius: 100%;
+
+}
+header,.main,footer{
+	transition: width .80s;
+	width:95%;
+	margin:20px auto;
+
+}
+header nav{
+	background:#528FD5;
+	overflow:hidden;
+}
+header nav ul{
+	list-style:none;
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	transition: padding .30s;
+	padding:15px 120px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+header nav ul li a:hover{
+	background:#75ACEC;
+}
+.main .articles{
+	width:68.5%;
+	float:left;
+	margin-right:1.5%;
+
+}
+.main .articles  article{
+	padding:18.5px;
+	background:#fff;
+	margin-bottom:20px;
+	border-radius: 10px;
+}
+aside{
+	border-radius: 5px;
+	width:30%;
+	background:#528FD5;
+	float:left;
+	padding:54px;
+	box-sizing:border-box;
+	-webkit-box-shadow: inset 13px -17px 20px 6px rgba(40,114,133,1);
+	-moz-box-shadow: inset 13px -17px 20px 6px rgba(40,114,133,1);
+	box-shadow: inset 13px -17px 20px 6px rgba(40,114,133,1);
+}
+footer{
+	background:#000;
+	color:#fff;
+	clear:both;
+	padding:10px 0px;
+	text-align:center;
+}
+@media  screen and (max-width: 1280px) {
+	header,.main,footer{
+		width:90%;
+		max-width:1200px;
+		max-height: 1500px;
+	}
+	header nav ul li a{
+		
+		padding:15px 80px;
+	}
+	@media  screen and (max-width: 995px) {
+
+		header,.main,footer{
+			width:90%;
+			max-width:1000px;
+		}
+
+		header nav ul li a{
+			padding:10px 20px;
+		}
+		.main .articles{
+			width:100%;
+		}
+		.main .articles  article{
+			padding:10px;
+			margin-bottom:15px;
+		}
+		aside{
+			width:100%;
+			padding:10px 20px;
+		}
+		@media  screen and (max-width: 470px) {
+
+			header,.main,footer{
+				width:100%;
+			}
+
+			header nav ul li a{
+				padding:10px 7px;
+			}
+			.main .articles{
+				width:95%;
+				margin-left: 5px;
+			}
+			.main .articles  article{
+				padding:10px;
+				margin-bottom:15px;
+			}
+			aside{
+				width:100%;
+				padding:10px 20px;
+			}
+			img{
+				border-radius: 100%;
+				
+			}
+			.logotipo
+			{
+				text-align: center;
+			}
+
+
+
+
+
+
+

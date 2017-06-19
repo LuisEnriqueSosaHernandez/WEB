@@ -1,0 +1,107 @@
+*{
+	margin: 0px;
+}
+/*Empieza estilos de la barra*/
+header{
+	max-height: 48px;
+	background-color: #142839;
+}
+header,.parallax{
+	border-bottom: 2px solid #f10b3c;
+}
+h2{
+	border-bottom: 2px solid #f10b3c;
+	width: 28%;
+}
+hr{
+	border-bottom: 1px solid #f10b3c;
+}
+#logo-head img{
+width: 100%;
+}
+#logo-head{
+	width: 3%;
+	background-color: #f10b3c;
+	margin-left: 20px;
+}
+#navbar,#logo-head,#navbar{
+float: left;
+display:inline-block;
+}
+#navbar{
+	margin-top: 10px;
+}
+#navbar ul li{
+	display: inline-block;
+	padding: 10px 28px;
+	margin: -2px;
+	color: white;
+	transition: background .30s;
+}
+#navbar ul li:hover{
+	background-color: red;
+}
+#login{
+	float: right;
+	display: inline-block;
+}
+#login img{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin-top: 4px;
+	background-color: 
+	white;
+}
+#login ul li{
+	display: inline-block;
+	float: left;
+}
+#login h4{
+	margin: 13px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+#login:hover{
+background-color: #f10b3c;
+}
+.clean{
+	clear: both;
+}
+.parallax{
+	background-image: url("img/fondo-3.jpg");
+	min-height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#titulo{
+	font-weight: bold;
+	font-size: 44px;
+	color:white;
+	padding: 10% 0px 0px 1%;
+
+}
+#sub-titulo{
+	color: white;
+	font-size: 30px;
+	margin-top: -100px;
+	padding: 1% 0 0 2%;
+}
+#lado-derecho{
+	float: right;
+	width: 22%;
+	background-color: #142839;
+	color: white;
+	padding: 1%;
+	border-left: 10px solid #f10b3c;
+	min-height: 1000px;
+}
+#lado-izquierdo{
+	float: left;
+	width: 63%;
+	margin-left: 5%;
+	padding: 1%;
+}

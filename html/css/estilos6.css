@@ -1,0 +1,16 @@
+table{
+//border:1px solid#000;
+border-collapse:collapse;
+//border-collapse:separate;
+width:500px;
+}
+table td{
+border:1px solid#000;
+padding:20px;
+}
+table tr:hover{
+background:pink;
+}
+table td:hover{
+background:yellow;
+}

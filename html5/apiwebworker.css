@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/05/2015, 06:20:33 AM
+    Author     : luisenrique
+*/
+#zonaformulario{
+    float:left;
+    padding: 30px;
+    border:2px dotted #990099;
+}
+#zonadatos{
+    float:left;
+    width: 600px;
+    margin-left: 50px;
+    padding: 30px;
+    border: 2px dotted #339900;
+}
+

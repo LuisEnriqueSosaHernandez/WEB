@@ -1,0 +1,46 @@
+canvas{
+	border-radius: 10px;
+	width: 50%;
+	
+	margin: 0 24%;
+}
+#btn{
+	float: right;
+	position: relative;
+	z-index: 2;
+	margin-top: -90px;
+	margin-right: 120px;
+
+}
+body{
+	background-color: black;
+	
+}
+button{
+	text-decoration: none;
+	border:2px solid #0E6301;
+	background-color: #00610A;
+	padding: 5px 5px 5px 5px;	
+	border-radius: 8px;
+	min-width: 80px;
+	clear: both;
+	
+}
+p{
+	color: #E5E4E4;
+	font-family: "sans-serif";
+	font-size: 20px;
+	font-weight: bold;
+}
+button:focus{
+	border:0;
+	outline:0 none;
+	border:2px solid #0E6301 !important;
+
+}
+button:hover{
+	transition: all .80s;
+	-webkit-box-shadow: inset -2px -15px 63px 11px rgba(27,61,20,1);
+-moz-box-shadow: inset -2px -15px 63px 11px rgba(27,61,20,1);
+box-shadow: inset -2px -15px 63px 11px rgba(27,61,20,1);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+section{
+width:500px;
+position:relative;
+margin:auto;
+}
+#lienzo{
+border:1px solid #000;
+}
+</style>
+<script>
+function comenzar(){
+
+var elemento=document.getElementById("lienzo");
+lienzo=elemento.getContext("2d");
+lienzo.beginPath();
+//lienzo.arc(250,100,100,0,Math.PI,true);
+lienzo.moveTo(250,50);
+//lienzo.quadraticCurveTo(300,50,50,290);
+lienzo.bezierCurveTo(200,125,300,125,250,50);
+lienzo.stroke();
+
+}
+
+window.addEventListener("load",comenzar,false);
+</script>
+<title>curvas</title>
+</head>
+<body>
+<section>
+<canvas width="500" height="300" id="lienzo">
+No soporta canvas
+</canvas>
+</section>
+</body>
+</html>

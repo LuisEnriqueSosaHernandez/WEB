@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario registro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Creamos un formulario</h1>
+	<form action="#" method="get" id="myform" onsubmit="return ValidateForm();">
+	<label>Nombre Completo</label></br>
+	<input type="text" size="34" id="nombre"></br>
+	<label>Correo electronico</label></br>
+	<input type="text" size="34" id="correo" ></br>
+	<label>Teléfono</label></br>
+	<input type="text" size="34" id="telefono"></br>
+	<label>Sexo</label></br>
+	<select id="genero">
+		<option value="">Genero</option>
+   <option value="1">Hombre</option> 
+   <option value="2">Mujer</option> 
+   <option value="3">No definido</option>
+</select ></br>
+<label>Contraseña</label></br>
+<input type="password" size="34" id="password">
+<label>Confirmar contraseña</label></br>
+<input type="password" size="34" id="password2"></br></br>
+	<button ><p>Registrar</p></button>
+</form>
+<script>
+	function ValidateForm(){
+		var nombre=document.getElementById('nombre').value;
+		var correo=document.getElementById('correo').value;
+		var genero=document.getElementById('genero').value;
+		var password=document.getElementById('password').value;
+		var telefono=document.getElementById('telefono').value;
+		var password2=document.getElementById('password2').value;
+		if(nombre==null ||nombre.length==0 || /^\s+$/.test(nombre)){
+			alert("Escribe un nombre");
+			return false;
+		}
+		
+		if(!(/\S+@\S+\.\S+/.test(correo))){
+			alert("Escribe un correo");
+			return false;
+		}
+
+		if(telefono==null ||telefono.length==0 || isNaN(telefono)){
+			alert("Escribe un telefono");
+			return false;
+		}
+		if(genero==0){
+			alert("Selecciona un genero");
+			return false;
+		}
+		
+		if(password==null ||password.length==0){
+			alert("Escribe una contraseña");
+			return false;
+		}
+		
+		if(password!=password2 || password2==null){
+			alert("Contraseña diferente verifica");
+			return false;
+		}
+
+	}
+	
+</script>
+</body>					
+</html>

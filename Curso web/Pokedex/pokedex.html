@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokédex</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<header>
+	<h1>Pokédex</h1>
+</header>
+<div class="container">
+<div class="row">
+	<section id="pokedex" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	<img id="seleccionada" src="image/null.png">
+		<form action="#" method="get" id="myform" onsubmit="return ValidateForm();">
+	<label>Nombre</label></br>
+	<input type="text" size="34" id="nombre"></br><span id="errornombre"></span><br>
+	<label>Tipo</label></br>
+	<input type="text" size="34" id="tipo"></br><span id="errortipo"></span><br>
+	<label>Región</label></br>
+	<input type="text" size="34" id="region" ></br><span id="errorregion"></span><br>
+	<label>Generación</label></br>
+	<select id="generacion">
+		<option value="0">Generación</option>
+   <option value="1">1</option> 
+   <option value="2">2</option> 
+   <option value="3">3</option>
+</select ><br><span id="errorgeneracion"></span></br>
+	<label>Género</label></br>
+	<select id="genero">
+		<option value="0">Género</option>
+   <option value="Macho">Macho</option> 
+   <option value="Hembra">Hembra</option> 
+   <option value="Indefinido">Indefinido</option>
+</select ><br><span id="errorgenero"></span></br><span id="errorimagen"></span></br>
+</br></br>
+	<label id="registro"><p>Registrar</p></label>
+	<label id="limpiar"><p>Limpiar</p></label>
+</form>
+	</section>
+	
+	<aside class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<div id="images"></div>
+	</aside>
+</div>
+	<div id="tabla">
+		<!--<table id="tabla1">
+			<h2>Pokédex</h2>
+			<tr>
+				<th><strong>Imagen</strong></th>
+				<th><strong>Datos</strong></th>
+			</tr>
+			<tr>
+				<td rowspan="6"><img id="imgtabla" src="image/null.png" height="200px"></td>
+			</tr>
+			<tr>
+				<td id="nombrepokemon"></td>
+			</tr>
+			<tr>
+				<td id="tipopokemon"></td>
+			</tr>
+			<tr>
+				<td id="regionpokemon"></td>
+			</tr>
+			<tr>
+				<td id="generacionpokemon"></td>
+			</tr>
+			<tr>
+				<td id="generopokemon"></td>
+			</tr>
+
+			
+		</table>-->
+	</div>
+</div>
+<footer>
+	<h2>Pokédex</h2>
+</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="query.js"></script>
+
+
+	
+
+</body>
+</html>

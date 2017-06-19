@@ -1,0 +1,373 @@
+*{
+	margin: 0px auto;
+}
+header{
+	width: 100%;
+}
+
+header nav{
+	width: 90%;
+	max-width: 20px auto;
+	margin: 20px auto;
+	background-color: rgba(34,81,37,0.8);
+	margin-top: 300px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+.menu_bar{
+	display: none;
+}
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+}
+header nav ul li{
+	float: left;
+}
+header nav ul li a{
+	color:#fff;
+	padding: 20px;
+	margin-right: 20px;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+}
+header nav ul li span{
+	margin-right: 10px;
+}
+header nav ul li a:hover{
+	background-color: rgba(34,81,37,1);
+}
+header #parallax{
+	background-image: url("images/selva.jpg");
+	min-height: 450px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#logo{
+	width: 60px;
+	height: 60px;
+}
+#titulo{
+	font-size: 100px;
+	color: white;
+	text-align: right;
+	margin-right: 1%;
+}
+body{
+	//background-color: #FAFAFA;
+	background-image: url("images/fondo.png");
+	font-family: "Book Antiqua";
+}
+#calentamiento{
+	width: 90%;
+}
+section{
+	float: left;
+	width: 80%;
+}
+section h1{
+	font-family: cursive;
+}
+#imagen1{
+	width: 400px;
+	height: 250px;
+	float: left;
+	margin-right: 15px;
+	border-radius: 5px;
+	border: 2px solid rgba(34,81,37,1);
+}
+aside{
+	width: 18%;
+	height: 250px;
+	float: right;
+	background-color: rgba(34,81,37,1);
+	border-radius: 10px;
+	color: white;
+}
+#txtcalentamiento{
+	text-align: justify;
+	margin-top: 10px;
+}
+aside ul{
+	margin-top: 10px;
+	list-style: armenian;
+}
+aside ul span{
+	margin-top: 20%;
+	font-size: 20px;
+
+}
+aside ul li{
+	padding: 4px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+}
+aside ul li a{
+	color: white;
+	text-decoration: none;
+}
+aside ul li a:link{
+	text-decoration: none;
+	color: white;
+}
+aside ul li a:visited{
+	text-decoration: none;
+	color: white;
+}
+aside ul li a:hover{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+
+}
+aside ul li a:active{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.galeria{
+	display: inline-block;
+	width: 33.1%;
+	text-align: center;
+	background-color: rgba(34,81,37,1);
+	border-radius: 5px; 
+	margin-top: 2.5%;
+	margin-bottom: .1%;
+
+
+}
+.galeria img{
+	height: 200px;
+	width: 90%;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	
+
+}
+.galeria h1{
+	font-size: 18px;
+	color: white;
+}
+#peligro{
+	margin-top: 2.5%;
+	
+}
+#peligro{
+	text-align: center;
+	font-family: cursive;
+	border-bottom: 2px solid black;
+}
+#peligro2{
+	text-align: center;
+	font-family: cursive;
+}
+.extincion{
+	display: inline-block;
+	width: 33.1%;
+	text-align: center;
+	margin-bottom: 2.5%;
+}
+.extincion img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	transition:2s ease;
+}
+.extincion img:hover{
+	border-radius: 10px;
+	transform : scale(1.3,1.3);
+	-moz-transform : scale(1.3,1.3); /* Firefox */
+	-webkit-transform : scale(1.3,1.3); /* Chrome - Safari */
+	-o-transform : scale(1.3,1.3); /* Opera */
+}
+.extincion h1{
+	margin-top: 1%;
+	font-size: 20px;
+}
+#leopardo{
+	color: rgb(141,147,163);
+}
+#lobo{
+	color:rgb(158,114,87);
+}
+#osopolar{
+	color:#5295FF;
+}
+#tigre{
+	color:rgb(216,119,51);
+}
+#tortuga{
+	color:rgb(76,77,81);
+	
+}
+#osopanda{
+	color:rgb(75,63,63);
+}
+  
+#contacto{
+	margin-top: 2.5%;
+	float: left;
+	width: 49%;
+	border-right: 2px solid black;
+	text-align: center;
+	
+}
+#acercade{
+	margin-top: 2.5%;
+	float: right;
+	width: 49%;
+}
+#contacto h1{
+	font-family: cursive;	
+	text-align: center;
+	font-size: 25px;
+}
+#contacto h4{
+ text-align: center;
+}
+#acercade h1{
+	font-family: cursive;
+	text-align: center;
+	font-size: 25px;
+}
+#acercade p{
+	text-align: justify;
+}
+#registro{
+	clear: both;
+	text-align: center;
+	font-size:25px;
+	font-family: cursive;
+}
+form{
+	text-align: center;
+}
+button{
+	text-decoration: none;
+	border:2px solid rgba(34,81,37,1);
+	background-color:  rgba(34,81,37,0.9);
+	border-radius: 8px;
+	min-width: 100px;
+	min-height: 100px;
+	border-radius: 50%;
+}
+button p{
+	color: #E5E4E4;
+	font-family: "sans-serif";
+	font-size: 20px;
+	font-weight: bold;
+}
+button:focus{
+	border:0;
+	outline:0 none;
+	border:2px solid #0E6301 !important; /*Preguntar*/
+
+}
+button:hover{
+	transition: all .80s;
+	-webkit-box-shadow: inset -2px -15px 63px 11px rgba(27,61,20,1);
+	-moz-box-shadow: inset -2px -15px 63px 11px rgba(27,61,20,1);
+	box-shadow: inset -2px -15px 63px 11px rgba(27,61,20,1);
+}
+.social{
+	position: fixed;
+	right: 0%;
+	top: 510px;
+	z-index: 1;
+	margin-right: 0px;
+}
+.social ul{
+list-style: none;
+}
+.social ul li a{
+	display: inline-block;
+	color: #fff;
+	background-color: black;
+	padding: 10px 10px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+
+}
+.social ul li .icon-facebook{
+	background-color:#3b5998 ;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.social ul li .icon-google{
+	background-color: #d95232;
+	
+}
+.social ul li .icon-instagram{
+	background-color: #fbad50;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.social ul li .icon-twitter{
+	background-color: #00abf0;
+	
+}
+.social ul li .icon-facebook:hover{
+	margin-left:-8%;
+	background-color: #000;
+	border-radius: 5px;
+}
+.social ul li .icon-google:hover{
+	margin-left:-8%;
+	background-color: #000;
+	border-radius: 5px;
+}
+.social ul li .icon-instagram:hover{
+	margin-left:-8%;
+	background-color: #000;
+	border-radius: 5px;
+}
+.social ul li .icon-twitter:hover{
+	margin-left:-8%;
+	border-radius: 5px;
+	background-color: #000;
+}
+
+#contacto a{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	background-color: black;
+	padding: 15px 15px;
+	margin-top: 5px;
+}
+#contacto .icon-facebook{
+	background-color:#3b5998 ;
+	
+}
+ #contacto .icon-google{
+	background-color: #d95232;
+	
+}
+#contacto .icon-instagram{
+	background-color: #fbad50;
+
+}
+#contacto .icon-twitter{
+	background-color: #00abf0;
+}
+#errorcorreo,#errorgenero,#errornombre{
+	color: red;
+}
+footer{
+	background-color: rgba(34,81,37,1);
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	margin-top: 1%;
+	font-family: "Book Antiqua";
+}
