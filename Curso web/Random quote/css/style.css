@@ -1,0 +1,35 @@
+*{
+	margin: 0px auto;
+}
+body{
+	background-color: pink;
+}
+header{
+	margin-bottom: 10%;
+}
+h1{
+	text-align: center;
+}
+#text{
+	text-align: center;
+	background-color:#F82488 ;
+	color: white;
+	border-radius: 5%;
+}
+button{
+	background-color: #AF0707;
+	border-radius: 10%;
+	font-size: 30px;
+}
+i{
+	padding-top: 5%;
+	color: white;
+	font-size: 50px !important;
+	cursor: pointer;
+}
+#texto{
+	background-color: white;
+	color: green;
+	border-radius: 10%;
+	border: dashed 1px black;
+}
