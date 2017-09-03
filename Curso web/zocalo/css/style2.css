@@ -1,0 +1,39 @@
+@media screen and (max-width:800px) {
+	header{
+	min-height:150px;
+	background-size: contain;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+	header img{
+		margin-top: -200%;
+	padding-top: 40%;
+}
+header h1{
+	margin-left: 0%;
+	font-size: 40px;
+	padding-top: 10%;
+}
+header span{
+	display: none;
+}
+main img{
+	margin-bottom: 50px;
+
+}
+main h3{
+	margin-top: -100px;
+}
+.ocultarchico{
+	display: none;
+}
+#veracruz h1{
+	font-size: 40px;	
+}
+#veracruz p{
+	
+	font-size: 20px;	
+}
+
+}
+
