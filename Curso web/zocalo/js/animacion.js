@@ -2,10 +2,11 @@ var mediaquery = window.matchMedia("(min-width: 1200px)");
 
 
 $(document).ready(function(){
+    if (mediaquery.matches) {
 	$('header img').animate({
 		'margin-top':'0%'
 	},1000);
-	if (mediaquery.matches) {
+	
 	$('header h1').animate({
 		'margin-left':'0%'
 	},1000);

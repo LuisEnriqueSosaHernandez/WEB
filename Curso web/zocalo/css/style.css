@@ -1,6 +1,31 @@
 *{
 	 margin: 0px auto;
 }
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F0EFEF;
+	border-radius: 0px;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F0EFEF;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #D7CF00;
+	border-radius: 0px;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(0, 0, 0, .2) 50%,
+											  rgba(0, 0, 0, .2) 75%,
+											  transparent 75%,
+											  transparent);
+}
 @keyframes scales{
   from{
    transform : scale(0.8);
@@ -32,13 +57,13 @@ header img:hover{
 }
 header h1{
 	margin-left: -200%;
-	font-family: "Bauhaus 93";
-	font-size: 90px;
-	padding-top: 10%;
+	font-family: "Jokerman";
+	font-size: 85px;
+	padding-top: 5%;
 	color: #F0EFEF;
 	letter-spacing: 5px;
+	font-weight: bold;
 }
-
 header a:link{
 	text-decoration: none;
 }
@@ -54,17 +79,23 @@ header a:active{
 header span{
 	font-family: "Bauhaus 93";
 	padding-top: 1%;
-	color: #F0EFEF;
 	font-size: 35px;
-	border: solid 5px #F0EFEF;
 	border-radius: 25px;
 	padding: 15px;
-}
-header span:hover{
 	background-color: #F0EFEF;
 	color: black;
+	border: solid 5px black;
 }
-
+header span:hover{
+border: solid 5px #F0EFEF;
+}
+header p{
+	font-family: "Bauhaus 93";
+	padding-top: 7%;
+	color: #F0EFEF;
+	font-size: 25px;
+	padding-left: 100px;
+}
 main{
 	text-align: center;
 	background-color: black;
