@@ -1,0 +1,11 @@
+*{
+	text-align: center;
+}
+body{
+	background-color: black;
+	color: white;
+	font-size: 40px;
+}
+#letra{
+	cursor: pointer;
+}
