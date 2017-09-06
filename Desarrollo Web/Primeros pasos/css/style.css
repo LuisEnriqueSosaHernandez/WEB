@@ -1,0 +1,22 @@
+h2{
+	font-size: 40px;
+}
+p{
+	text-align: justify;
+	background-color: cyan;
+
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	border-bottom: .5px solid black;
+}
+#rojo{
+	background-color: red;
+}
+.verde{
+background-color: green;
+border: 10px solid blue;
+padding: 10%;
+}

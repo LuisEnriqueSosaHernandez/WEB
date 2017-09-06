@@ -14,25 +14,33 @@ $titulo="Android";
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Viewport para dispositivos moviles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <header id="" class="">
-	<img src="img/android.png" style="float: left; width: 100px; height:100px;"><h1>Android</h1><hr>
+	<img src="img/android.png"><h1>Android</h1><hr>
 </header><!-- /Termina la cabecera -->
 <body ><!--Comienzo del cuerpo-->
+<form action="viaje.php" method="POST">
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre"><br>
+<label for="apellidos">Apellidos </label>
+<input type="text" name="apellidos">
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar Datos" name="btnReset">
+	
+</form>
 
-
-	<h2 style="clear: both; text-align: center" ><h2 id="sec01">¿Que es android?</h2>
-
+	<h2 id="sec01">¿Que es android?</h2>
 	<a href="#sec02">Seccion 02</a>
 	<a href="#sec03">Seccion 03</a>
 	<h2 id="sec01">Seccion 01</h2>
-	<p>Android es un sistema operativo basado en el núcleo Linux. Fue diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes, tabletas y también para relojes inteligentes, televisores y automóviles. <br>Inicialmente fue desarrollado por Android Inc., empresa que Google respaldó económicamente y más tarde, en 2005, compró. Android fue presentado en 2007 junto la fundación del Open Handset Alliance (un consorcio de compañías de hardware, software y telecomunicaciones) para avanzar en los estándares abiertos de los dispositivos móviles. <br>El primer móvil con el sistema operativo Android fue el HTC Dream y se vendió en octubre de 2008. Los dispositivos de Android venden más que las ventas combinadas de Windows Phone e IOS.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
+	<p id="rojo">Android es un sistema operativo basado en el núcleo Linux. Fue diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes, tabletas y también para relojes inteligentes, televisores y automóviles. <br>Inicialmente fue desarrollado por Android Inc., empresa que Google respaldó económicamente y más tarde, en 2005, compró. Android fue presentado en 2007 junto la fundación del Open Handset Alliance (un consorcio de compañías de hardware, software y telecomunicaciones) para avanzar en los estándares abiertos de los dispositivos móviles. <br>El primer móvil con el sistema operativo Android fue el HTC Dream y se vendió en octubre de 2008. Los dispositivos de Android venden más que las ventas combinadas de Windows Phone e IOS.</p>
+	<p class="verde">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
+	<p class="verde">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
+	<p class="verde">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
+	<p class="verde">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
+	<p class="verde">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
+	<p class="verde">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequuntur nesciunt atque quam soluta libero minus dolorum fuga nemo? Molestias illo modi adipisci alias reiciendis quibusdam, iste commodi nulla deserunt!</p>
