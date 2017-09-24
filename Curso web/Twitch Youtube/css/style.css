@@ -1,0 +1,21 @@
+img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+*{
+	text-align: center;
+	
+}
+#seguidorinfo{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+}
+div{
+	padding-top: 20px;
+	border-radius: 10px;
+}
+body{
+	background-color: #FCE8E8;
+}
