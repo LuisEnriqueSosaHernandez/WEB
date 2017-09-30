@@ -1,0 +1,44 @@
+*{
+	margin:0 auto;
+}
+body{
+	text-align: center;
+	background-color: silver;
+	font-family: "Book-antiqua";
+	font-style: italic;
+}
+.btn{
+	background-color: black;
+}
+h3{
+display: inline;
+color:#400000 ;
+padding: 1%;
+
+}
+#iniciar,#apagar{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+section{
+	background-color: white;
+	padding: 3%;
+}
+#logo{
+	background-color: #EDEDED;
+	padding: 1%;
+}
+#contenidoregresivo{
+	padding: 5%;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOHgjq8S3tfqnUGEl2Op5X94gCCHAe91vw95WplKovDqLJA4Ga9A");
+}
+#regresiva{
+	color:white;
+}
+#numeroregresivo{
+	font-size: 60px;
+	color: white;
+}
+.rojo{
+	color: red !important;
+}
