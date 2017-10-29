@@ -1,0 +1,184 @@
+*{
+	margin: 0px auto ;
+}
+body{
+background-color:  #007909;
+font-family: "Book-antiqua";
+}
+header{
+	background-color: #E0FCE3;
+	
+}
+header h1{
+	 color: #007909;
+}
+section{
+	margin-top: .5%;
+	margin-bottom: .5%;
+}
+section div p{
+	color: #E0FCE3;
+	font-size: 30px;
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+#gato{
+	width: 129px;
+	height: 129px;
+	transition: .5 ease;
+}
+.gato{
+	border-radius: 100%;
+}
+div img{
+	text-align: center;
+}
+h1{
+	text-align: center;
+	font-size: 75px;		
+}
+h1,h3{
+color: #E0FCE3;
+
+}
+h3{
+	font-size: 50px;
+}
+.borde{
+	
+	height: 120px;
+
+}
+.marco{
+	transition: .5s ease;
+	border: 8px solid black;
+}
+.ganador{
+	display: none;
+	z-index: 100;
+	z-index: 100;
+	position: absolute;
+	border:none;
+	text-align: center;
+	background-color:#E0FCE3; 
+	width: 100%;
+}
+.ganador p{
+	padding: 20px;
+color:  #007909;
+}
+.select{
+	z-index: 100;
+	position: absolute;
+	border:none;
+	text-align: center;
+	background-color:#E0FCE3; 
+	width: 100%;
+
+
+}
+.select p{
+	padding: 20px;
+color:  #007909;	
+}
+#reinicio{
+	transition: .5s ease;
+	display: none;
+	text-align: center;
+	font-size: 30px;
+	color: #007909;
+}
+#reinicio:hover{
+	color: white;
+	background-color: #007909;
+	color: #E0FCE3;
+	border-radius: 10px;
+	cursor: pointer;
+
+}
+#celda0,#celda1,#celda2,#celda3,#celda4,#celda5,#celda6,#celda7,#celda8{
+	transition: .5s ease;
+}
+#celda0:hover,#celda1:hover,#celda2:hover,#celda3:hover,#celda4:hover,#celda5:hover,#celda6:hover,#celda7:hover,#celda8:hover{
+	-webkit-box-shadow: inset 0px 0px 85px 7px rgba(0,0,0,0.8);
+-moz-box-shadow: inset 0px 0px 85px 7px rgba(0,0,0,0.8);
+box-shadow: inset 0px 0px 85px 7px rgba(0,0,0,0.8);
+}
+#turno{
+	display: none;
+}
+#circulo,#cruz{
+	transition:.5s ease;
+}
+#circulo:hover{
+	transform : scale(1.4,1.4);
+	-moz-transform : scale(1.4,1.4); /* Firefox */
+	-webkit-transform : scale(1.4,1.4); /* Chrome - Safari */
+	-o-transform : scale(1.4,1.4); /* Opera */
+	border-radius: 100%;
+	background-color:#007909;
+	cursor: pointer;
+
+}
+#cruz:hover{
+transform : scale(1.4,1.4);
+	-moz-transform : scale(1.4,1.4); /* Firefox */
+	-webkit-transform : scale(1.4,1.4); /* Chrome - Safari */
+	-o-transform : scale(1.4,1.4); /* Opera */
+	border-radius: 100%;
+	background-color:#007909;
+	cursor: pointer;
+}
+footer{
+	background-color: white;
+	text-align: center;
+	background-color: #E0FCE3;
+}
+footer h3{
+	 color: #007909;
+}
+#caja{
+	transition: .5s ease;
+	cursor: pointer;
+	-ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari y Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 5px;
+  margin-left: 10px;
+}
+#caja:hover{
+	cursor: pointer;
+	-ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari y Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 2px;
+}
+@media screen and (max-width:800px) {
+.borde{
+	height: 90px;
+}
+h1{
+	font-size: 40px;
+}
+h3{
+	font-size: 20px;
+}
+img{
+	width: 50px;
+	height: 50px;
+}
+.select{
+	width: 90%;
+}
+.ganador{
+	width: 90%;
+}
+#caja{
+  margin-left: 20px;
+}
+}
+

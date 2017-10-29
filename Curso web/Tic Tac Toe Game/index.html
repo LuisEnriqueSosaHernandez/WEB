@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe Game</title>
+	<meta name="description" content="Clasico juego del gato">
+	<meta name="keywords" content="Gato, Tic Tac Toe game, Juegos">
+	<meta name="author" content="Luis Enrique">
+	<meta name="copyright" content="lesh">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Viewport para dispositivos moviles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+		<h1>Tic Toe Game</h1>
+		<p id="reinicio">Restart</p>
+		</div>
+	
+	</header><!-- /header -->
+	<section>
+		<div class="container-fluid">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/El_Gat_Negre.svg/500px-El_Gat_Negre.svg.png" alt="Gato" class="img-responsive" id="gato">
+		</div>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-lg-4 "><p id="turno">Turno: player 1</p></div>
+		<div class="col-md-4 col-lg-4 col-xs-12">
+		<div class="container-fluid">
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda0"><img src="" alt="" id="img0"></div>
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda1"><img src="" alt="" id="img1"></div>
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda2"><img src="" alt="" id="img2"></div>
+			<div class="col-md-10 col-lg-10 borde col-xs-10 select"><p>2 players?<input type="checkbox" name="" checked="checked" id="caja"></p></div>
+			<div class="col-md-10 col-lg-10 borde col-xs-10 ganador "><p id="tituloganador">Winner</p></div>
+		</div>
+		</div>
+		<div class="col-md-4 col-lg-4 "></div>
+	</div>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-lg-4 "></div>
+		<div class="col-md-4 col-lg-4 col-xs-12">
+		<div class="container-fluid">
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda3"><img src="" alt="" id="img3"></div>
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda4"><img src="" alt="" id="img4"></div>
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda5"><img src="" alt="" id="img5"></div>
+			<div class="col-md-10 col-lg-10 borde col-xs-10 select" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Circulo-white.svg/1024px-Circulo-white.svg.png" alt="" id="circulo"></div>
+			<div class="col-md-10 col-lg-10 borde col-xs-10 ganador"><p id="ganador"></p></div>
+		</div>
+		</div>
+		<div class="col-md-4 col-lg-4 "></div>
+	</div>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-lg-4 "></div>
+		<div class="col-md-4 col-lg-4 col-xs-12">
+		<div class="container-fluid">
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda6"><img src="" alt="" id="img6"></div>
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda7"><img src="" alt="" id="img7"></div>
+			<div class="col-md-4 col-lg-4 borde col-xs-4" id="celda8"><img src="" alt="" id="img8"></div>
+			<div class="col-md-10 col-lg-10 borde col-xs-10 select" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/White_X_in_red_background.svg/450px-White_X_in_red_background.svg.png" alt="" id="cruz"></div>
+			<div class="col-md-10 col-lg-10 borde col-xs-10 ganador"><p>Congratulations!</p></div>
+		</div>
+		</div>
+		<div class="col-md-4 col-lg-4 "></div>
+	</div>
+	</div>
+</section>
+	<footer>
+		<div class="container-fluid">
+		<h3>Created by LESH</h3>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/query.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</body>
+
+</html>
