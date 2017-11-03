@@ -1,0 +1,135 @@
+*{
+	margin: 0px auto;
+}
+#botones{
+	text-align:center;
+}
+p{
+	font-size: 15px;
+	color: rgba(247,247,247,0.8); 
+	
+}
+label{
+	border: 1px solid white;
+	padding: 3%;
+	text-align: center;
+	margin: 10px;
+	color: rgba(247,247,247,0.8);
+	background-color: #6D7D12;
+	transition: .5s ease;
+}
+label:hover{
+	background-color: #4C4C4C;
+	cursor: pointer;
+}
+.apagado{
+	background: gray;
+}
+#cabecera{
+	text-align: center;
+	
+	background-color: #6A732A;
+	margin: 0px auto!important;
+}
+h1{
+	font-size: 80px;
+	padding: 2.5%;
+	color: rgba(247,247,247,0.8);
+	font-family: "Book-antiqua";
+	font-weight: bold;
+	background-color: #6D7D12;
+}
+body{
+	background-color: #4C4C4C;
+}
+#verde,#rojo,#amarillo,#azul{
+	height: 100px;
+	transition: .2s ease;
+	cursor: pointer;
+	margin: 1%;
+}
+#verde,#rojo{
+	margin-top: 5%;
+}
+.verde{
+	background-color: green;
+}
+.verde1{
+	background-color: #66FF56;
+	transform : scale(1.1,1.1);
+	-moz-transform : scale(1.1,1.1); /* Firefox */
+	-webkit-transform : scale(1.1,1.1); /* Chrome - Safari */
+	-o-transform : scale(1.1,1.1); /* Opera */
+}
+.rojo{
+	background-color: red;
+}
+
+.rojo1{
+	background-color: #FF6060;
+	transform : scale(1.1,1.1);
+	-moz-transform : scale(1.1,1.1); /* Firefox */
+	-webkit-transform : scale(1.1,1.1); /* Chrome - Safari */
+	-o-transform : scale(1.1,1.1); /* Opera */
+}
+.amarillo{
+	background-color: yellow;
+}
+.amarillo1{
+	background-color: #FFFA77;
+	transform : scale(1.1,1.1);
+	-moz-transform : scale(1.1,1.1); /* Firefox */
+	-webkit-transform : scale(1.1,1.1); /* Chrome - Safari */
+	-o-transform : scale(1.1,1.1); /* Opera */
+}
+.azul{
+	background-color: blue;
+}
+.azul1{
+	background-color: #72A4FF;
+	transform : scale(1.1,1.1);
+	-moz-transform : scale(1.1,1.1); /* Firefox */
+	-webkit-transform : scale(1.1,1.1); /* Chrome - Safari */
+	-o-transform : scale(1.1,1.1); /* Opera */
+}
+@media screen and (max-width:800px) {
+h1{
+	font-size: 30px;
+}
+#verde,#rojo,#amarillo,#azul{
+	 margin: 0;
+	 
+}
+#verde,#rojo{
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+
+.verde1{
+	transform : scale(1.0,1..0);
+	-moz-transform : scale(1.0,1.0); /* Firefox */
+	-webkit-transform : scale(1.0,1.0); /* Chrome - Safari */
+	-o-transform : scale(1.0,1.0); /* Opera */
+}
+
+.rojo1{
+	transform : scale(1.0,1..0);
+	-moz-transform : scale(1.0,1.0); /* Firefox */
+	-webkit-transform : scale(1.0,1.0); /* Chrome - Safari */
+	-o-transform : scale(1.0,1.0); /* Opera */
+}
+
+.amarillo1{
+	transform : scale(1.0,1..0);
+	-moz-transform : scale(1.0,1.0); /* Firefox */
+	-webkit-transform : scale(1.0,1.0); /* Chrome - Safari */
+	-o-transform : scale(1.0,1.0); /* Opera */
+}
+
+.azul1{
+	transform : scale(1.0,1..0);
+	-moz-transform : scale(1.0,1.0); /* Firefox */
+	-webkit-transform : scale(1.0,1.0); /* Chrome - Safari */
+	-o-transform : scale(1.0,1.0); /* Opera */
+}
+}

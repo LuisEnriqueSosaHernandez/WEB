@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Build a Simon Game</title>
+	<meta name="description" content="Clasico juego de Simon Game">
+	<meta name="keywords" content="Build, Simon Game, Games">
+	<meta name="author" content="Luis Enrique">
+	<meta name="copyright" content="lesh">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Viewport para dispositivos moviles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div id="cabecera" class="container-fluid">
+		<h1>Build a Simon Game</h1>
+		</div>
+		<div id="cabecera" class="container-fluid">
+		<h3 id="correctas">0</h3>
+		</div>
+	</header><!-- /header -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 "></div>
+			<div class="col-md-2 col-xs-6 verde" id="verde"><audio id="1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+			</audio></div>
+			<div class="col-md-2 col-xs-6 rojo" id="rojo"><audio id="2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+			</audio></div>
+			<div class="col-md-4 "></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-2 col-xs-6 amarillo" id="amarillo"><audio id="3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+			</audio></div>
+			<div class="col-md-2 col-xs-6 azul" id="azul"><audio id="4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+			</audio></div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="botones"><label id="onoff">Off</label><label id="jugar">Play</label><label id="reset">Restart</label><p>Strict</p><input type="checkbox" name="" id="caja"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/query.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
