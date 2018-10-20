@@ -1,0 +1,243 @@
+/**Estilo de Textos**/
+h4.title {
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+p.det-inf {
+  font-size: 12px;
+  margin-left: 1em;
+  color: #595959;
+}
+
+a.det-inf {
+  font-size: 12px;
+  margin-left: 1em;
+  margin-bottom: 16px;
+  color: #595959;
+}
+
+a.det-inf:hover{
+  text-decoration:none; 
+  color: #014e82;
+}
+
+div.campo{
+  margin: 1em 0;
+}
+
+div.boton{
+  text-align: center;
+}
+
+p.visit {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+
+}
+
+a.proximasFechas{
+  color: white!important;
+  background-color: #014e82;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.proximasFechas:hover{
+  text-decoration: none;
+}
+
+
+/**Estilo de elementos de formulario**/
+input.s-input {
+  margin-bottom: 10px;
+}
+
+button.s-btn {
+  background-color: rgb(1, 78, 130);
+}
+
+button.s-btn i {
+  margin: 0 auto;
+  font-size: 17px;
+  color: white;
+}
+/**Estilo de las tarjetas**/
+.card {
+  border: 1px solid rgb(26, 49, 201);
+  width: 98%
+}
+
+div.card-header {
+  background-color: rgb(1, 78, 130);
+  height: 30px;
+}
+
+p.card-text{
+  font-family: 'Verdana';
+  margin: auto 5%;
+  color: #595959;
+  font-style: italic;
+}
+
+div.card h5 {
+  color: white;
+  font-size: 15px;
+}
+
+div.card-header h5 {
+  margin-top: -5px;
+}
+
+div.card-block a.visit {
+  margin-left: 50%;
+  transform: translateX(-78.25px);
+  background-color: rgb(1, 78, 130);
+}
+
+div.leftbar {
+  margin-top: .5em;
+  margin-left: 0.8em;
+}
+
+img.header {
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: inset 7px -1px 7px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+img.logoEmpresa {
+  width: 300px;
+  margin: 5px auto;
+}
+
+img.logoEmpresamin {
+  margin-top: -10px;
+  width: 100%;
+}
+
+figure.imagen
+{
+  border-color: red;
+  width: 300px;
+  height: 130px;
+}
+
+
+div.bardetail {
+  background-color: rgb(246, 246, 246);
+  font-size: 12px;
+}
+
+i.fa {
+  position: inherit;
+  font-size: 25px;
+  color: rgb(110, 109, 109);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.enable {
+  display: flex;
+}
+
+.disable {
+  display: none;
+}
+
+.list-group-item {
+  list-style: georgian!important;
+}
+
+.panel-heading{
+  background-color: #014e82;
+  margin: auto 5%;
+}
+
+a.tituloAreas{
+  font-family: Verdana;
+  color: white;
+  font-size: 14px;
+  
+}
+
+h4.areas{
+  padding: 10px 20px;
+}
+
+a.tituloAreas:hover{
+  text-decoration: none;
+}
+
+div.panel-body:hover{
+  text-decoration: none;
+}
+
+div.panel-body{
+  background-color: #f0f0f0!important;
+  margin: auto 5%;
+}
+
+h6.nombreEmpresa{
+  color: #6e6d6d;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/**Lista de areas**/
+li.list-group-item {
+  background-color: rgb(245, 241, 241);
+}
+
+li.list-group-item:nth-child(2n) {
+  background-color: rgb(230, 228, 228);
+}
+
+p.tituloArea{
+  display: block;
+  width: 100%;
+  font-family: Verdana;
+  color: #014e82;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 0.1em;
+}
+
+
+p.descripcionArea{
+  font-family: Verdana;
+  font-size: 14px;
+  margin-bottom: 0.1em;
+}
+
+/**Ajustes resposivos**/
+@media (max-width: 1366px) {
+  i.fa {
+    font-size: 16px;
+    color: rgb(110, 109, 109);
+    margin-right: 3px;
+    margin-left: -8px;
+  }
+}
+
+@media (max-width: 576px) {
+  div.leftbar {
+    margin-top: 1em;
+    margin-left: -0.8em;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  img.logoEmpresa {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

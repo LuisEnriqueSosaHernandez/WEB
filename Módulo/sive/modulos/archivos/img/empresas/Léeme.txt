@@ -1,0 +1,14 @@
+Para cada empresa se manejan dos imágenes:
+
+-La imagen del logo
+
+	nombredelaempresa_logo.extension
+Ejemplo:
+	tenaristamsa_logo.jpg
+
+-La imágen de la empresa
+	nombredelaempresa.extension
+Ejemplo:
+	tenaristamsa.jpg
+
+FAVOR DE RESPETAR EL FORMATO DE LOS NOMBRES

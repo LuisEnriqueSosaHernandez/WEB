@@ -1,0 +1,107 @@
+.modal-header{
+    background-color: rgb(1, 78, 130);
+    padding: 0!important;
+    text-transform: none!important;
+}
+
+
+.modal-title{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    background-color: inherit;
+    padding: 0px!important;
+}
+
+.titulo{
+    text-align: center;
+    font-style: italic;
+    color:#636c72;
+    font-size: 18px;
+    font-family: "Verdana";
+}
+
+.encabezado{
+    text-align: center;
+    color: rgb(1, 78, 130);
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subtitulo{
+    text-align: center;
+    color: rgb(1, 78, 130);
+    font-family: "Verdana";
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+
+.titulo_campo{
+    color:#404040;   
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-family: "Verdana";
+}
+
+
+.valor_campo{
+    color:#404040;   
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 5%;
+    font-family: "Verdana";
+    margin-bottom: 0;
+}
+
+.campo{
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body{
+    background-color: #eee;
+}
+
+.campo button{
+    font-size: 12px;
+	font-weight: bold;
+    background-color: rgb(1, 78, 130);
+	width: 60%;
+	height: 10%px;
+}
+
+#importante{
+ width: 60%;  
+ display: flex;
+ justify-content: center;
+}
+
+div #select_1{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+div#select_1 select.materias {
+    height: 16px;
+}
+
+button#cerrar{
+    width: 10px!important;
+    color: white;
+    margin: 5px 10px;   
+}
+
+div#importante {
+    margin: 0 auto;
+}
+
+div.nip {
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}

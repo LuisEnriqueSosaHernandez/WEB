@@ -1,0 +1,242 @@
+/*Estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Estilo del contenedor*/
+div.contenedor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/*Estilo del div header*/
+div.header {
+  position: relative;
+  background-color: #004e7f;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100%;
+  box-shadow: 2px 2px 5px 1px black;
+}
+/*Estilos en el titulo h1*/
+h1.titulo {
+  font-family: "Arial";
+  /*color: #f3ea00;*/
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+h1.titulo2{
+  /*font-family: Georgia, serif, Times, "Times New Roman";*/
+  font-family: "Arial";
+  /*color: #f3ea00;*/
+  color: rgb(219,219,219);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*Dimensiones en la imagen de fondo*/
+div.fondo img {
+  width: 100%!important;
+  height: 100%!important;
+}
+/*Estilo de la imagen de fondo*/
+.fondo {
+  position: absolute!important;
+  width: 100%!important;
+  height: 80%!important;
+  top: 0px!important;
+  left: 0px!important;
+  box-shadow: 2px 2px 5px 1px black!important;
+  z-index: -1000;
+}
+/*Estilo del logo SEP*/
+.sep {
+  padding-top: 20px;
+  height: 70%
+}
+/*Estilo Logo TNM*/
+.tnm
+{
+ position: absolute;
+ padding-top: 20px;
+ height: 75%;
+ left: 85%;
+}
+/*Estilo en la zona de abajo*/
+div.footer {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0px;
+  text-align: left;
+}
+/*Estilo en el cuadro del login*/
+.square {
+  margin: 25px 25px auto auto;
+  width: 300px;
+  height: 340px;
+}
+/*Estilo en el fondo del login*/
+.squarebackground {
+  position: absolute;
+  width: 300px;
+  height: 340px;
+  background: #dedede;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  box-shadow: 2px 2px 5px 1px black;
+}
+/*Estilo en el formulario del login*/
+.form {
+  padding: 0 20px;
+  position: relative;
+}
+/*Estilo en las letras del login*/
+.form h1 {
+  font-size: 18px;
+  padding-bottom: 0px;
+  font-family: Verdana;
+  color: rgb(89,89,89);
+
+}
+
+/*Muestra el item*/
+.show {
+  display: block;
+}
+/*Oculta el item*/
+.hidden {
+  display: none;
+}
+/*Estilo en los formularios*/
+form {
+  padding-right: 20px !important;
+}
+/*Estilo de las cajas de texto en los formularios*/
+input.input {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  background: #fff;
+  border: none;
+  color: black;
+  outline: none;
+}
+/*Estilo en los botones de los formularios*/
+input.button {
+  border: none;
+  display: block;
+  background: #004e7f;
+  height: 50px;
+  width: 100px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+/*Estilo al pasar el mouse sobre los botones*/
+input.button:hover {
+  -webkit-appearance: push-button;
+user-select: none;
+white-space: pre;
+}
+/*Estilo del texto de arriba en la pagina*/
+div.top {
+  background: #008c46;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+/*Estilo de los titulos h2*/
+h2.logtitle {
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 12px 22px 12px 22px;
+}
+/*Estilos del logo*/
+div.logo {
+  height: 10px;
+  position: absolute;
+  top: 15%;
+  left:1%;
+
+}
+/*Estilos de las tabs*/
+ul.tabs {
+  /*background: #008c46;*/
+  background:rgb(219, 219, 219);
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  list-style-type: none;
+  font-family: Verdana;
+}
+
+ul.tabs li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+ul.tabs a {
+  background: rgb(219, 219, 219);
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: #004e7f;
+  font-size: 14px;
+  padding: 12px 10px 12px 10px;
+}
+
+ul.tabs a.active {
+  background: #004e7f;
+  border-right: none;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  color: rgb(219, 219, 219);
+  font-family: Verdana;
+}
+
+input.oculto {
+  display: none;
+}
+
+/**SLIDESHOW**/
+#slide {
+  position:relative;
+}
+
+#slide IMG {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+#slide IMG.active {
+  z-index:10;
+}
+
+#slide IMG.last-active {
+  z-index:9;
+}

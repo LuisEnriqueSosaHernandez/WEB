@@ -1,0 +1,104 @@
+/**Estilo de las tarjetas**/
+div.leftbar {
+  margin-top: 2em;
+  margin-left: 0.8em;
+}
+
+img.figure-img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: inset 7px -1px 7px rgba(0, 0, 0, 0.4), 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+div.card-header {
+  background-color: rgb(1, 78, 130);
+  height: 30px;
+}
+
+#headingProfile h5 {
+  text-align: center;
+}
+
+div.card h5 {
+  color: white;
+  font-size: 15px!important;
+  font-weight: bold;
+}
+
+div.card-header h5 {
+  margin-top: -5px;
+}
+
+div.card-block h4 {
+  font-size: 20px;
+  color: rgb(1, 78, 130);
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
+div.card {
+  background-color: rgb(238, 238, 238);
+}
+
+div.card-block p {
+  text-align: center;
+}
+
+div.card-block button {
+  margin-left: 50%;
+  transform: translateX(-78.25px);
+  background-color: rgb(1, 78, 130);
+}
+
+div.card-block p.align {
+  text-align: left;
+}
+
+p.align span.bold {
+  font-weight: bold;
+}
+
+p.align i {
+  margin-right: 1em;
+  font-size: 25px;
+}
+
+p.space {
+  margin-left: 3em;
+}
+
+#accordion {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.graded {
+  width: 30px;
+  margin-right: 0.9em;
+}
+
+.ico {
+  left: 0;
+  width: 30px;
+  margin-top: -7px;
+  margin-right: 1em;
+}
+
+/**Ajustes responsivos**/
+@media (max-width: 1024px) {
+  img.figure-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 554px) {
+  img.figure-img {
+    width: 200px;
+    height: 200px;
+  }
+}

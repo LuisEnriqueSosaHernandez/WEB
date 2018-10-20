@@ -1,0 +1,214 @@
+div h6{
+    color: #404040;
+    font-style: italic;
+    text-align: center;
+    display: inline;
+}
+
+div img{
+    width: 30px;
+}
+
+div.descargar{
+    display: flex;
+    justify-content: center;
+}
+
+div.descargar:hover{
+    text-decoration: none;
+}
+
+div p{
+    color: #404040;
+    font-style: italic;
+    text-align: center;
+    font-family: "Verdana";
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+div.element{
+    display: inline;
+}
+
+.item_list{
+    margin-left: 5%;
+    color: #404040;
+    font-style: italic;
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 12px;
+}
+
+.tituloEmpresa{
+    text-align: center;
+    font-style: italic;
+    color:#636c72;
+    font-size: 18px;
+    font-family: "Verdana";
+    margin-bottom: 5px;
+}
+
+.titulo{
+    color:#404040;   
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 2px;
+    font-family: "Verdana";
+    text-align: center;
+}
+
+.valor{
+    color:#404040;   
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 5%;
+    font-family: "Verdana";
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.titulo_campo{
+    display:inline;
+}
+
+.valor_campo{
+    display: inline;
+}
+
+.estado,.row{
+    display: flex;
+    justify-content: center;
+    border-style: solid!important;
+    border-width: thin;
+    border-color: #014e82!important;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 5px 0;
+}
+
+.academico{
+    border-style: solid!important;
+    border-width: thin;
+    border-color: #014e82!important;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.acad{
+    border-style: none!important;
+}
+
+.t-bold {
+  font-weight: bold;
+  font-size: 12px;
+    margin-bottom: 0!important;
+}
+
+.st {
+	font-style: italic;
+	text-decoration: underline;
+    padding-bottom: 0;
+}
+
+p.process {
+  color: rgb(255, 192, 98);
+
+}
+
+p.confirmed {
+  color: rgb(0, 175, 85);
+}
+
+p.canceled {
+  color: rgb(192, 0, 0);
+}
+
+p.rejected {
+  color: rgb(192, 0, 0);
+}
+
+div .col-sm-6{
+    padding: 0!important;
+}
+
+.icono{
+    float: left;
+}
+
+.profesor{
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+    padding: 5px 0;
+}
+
+.campo{
+    display: inline-block;
+}
+
+.recomendaciones{
+    margin-left: 10%;
+    color: #404040;
+    font-style: italic;
+    font-family: "Verdana";
+    font-size: 12px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #014e82;
+}
+
+a{
+    color: #595959;
+}
+
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+a.participante{
+    width: 80%!important;
+    margin: 0 auto;
+    padding: 5px 5px;
+}
+
+img.mini{
+    width: 35px;
+    height:35px;
+    margin: auto 5px;
+}
+
+
+a.docentes{
+    width: 80%!important;
+    margin: 0 auto;
+    padding: 5px 5px;
+    background-color: #eeeeee!important;
+    border-style: none;
+}
+
+hr{
+    color: #014e82;
+}
+
+div.numPart{
+    text-align: left;
+}
