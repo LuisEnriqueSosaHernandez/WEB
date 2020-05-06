@@ -1,0 +1,17 @@
+.css3{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+
+    -webkit-box-shadow: 0 0 10px 10px rgba(1,1,1,0.3);
+box-shadow: 0 0 10px 10px rgba(1,1,1,0.3);
+
+-moz-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+-webkit-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+-o-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+-ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
