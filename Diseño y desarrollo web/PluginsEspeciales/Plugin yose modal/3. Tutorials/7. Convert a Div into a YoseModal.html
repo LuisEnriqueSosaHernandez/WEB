@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yose Modal</title>
+	
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Yose Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/yosemodal.min.css">
+
+	<!-- Gsap Animations -->
+	<script src="static/js/gsap.js"></script>
+
+	<!-- Yose Modal JS -->
+	<script src="static/js/yosemodal.min.js"></script>
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+
+<!-- YoseDiv1 is the unique ID -->
+<!-- yosemodaldiv is a class that you need to set to hide the element until launch -->
+<div class="YoseDiv1 yosemodaldiv">
+
+	<h2>Hi</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+</div>
+
+
+<button id="butClick">Click me to launch</button>
+
+<br><br>
+
+<p>
+	Please, check the code and you will see the HTML of the Yose Modal
+
+</p>
+
+
+
+
+
+<script type="text/javascript">
+
+	$("#butClick").on("click",function(){
+		
+		//Yose Modal Call
+		$.yosemodal({
+			position: "center",
+			width: "440px",
+			intime:0.3,
+			divwithclass: "YoseDiv1",
+		});
+
+	});
+
+
+</script>
+
+
+
+
+</body>
+</html>

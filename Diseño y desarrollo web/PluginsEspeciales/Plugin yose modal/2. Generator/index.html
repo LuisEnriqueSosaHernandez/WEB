@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html ng-app="generatorApp">
+<head>
+	<title>Yose Modal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+ 
+	<!-- Generator Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/generator.style.css">
+
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Angular JS -->
+	<script src="static/js/angular.js"></script>
+
+	<!-- Yose Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/yosemodal.css">
+
+	<!-- Gsap Animations -->
+	<script src="static/js/gsap.js"></script>
+
+	<!-- Yose Modal JS -->
+	<script src="static/js/yosemodal.js"></script>
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+
+	<!-- JS Color -->
+	<script src="static/js/jscolor/jscolor.js"></script>
+
+
+</head>
+<body ng-controller="pageCtrl">
+
+<div class="row">
+
+	<h1>Yose Modal Generator v1</h1>
+	<br>
+
+	<table class="table" border="0" style="width:600px;">
+		
+		<tr>
+			<th style="width:150px;">Property</th>
+			<th style="width:300px;">Value</th>
+		</tr>
+
+		<tr>
+			<td>Title:</td>
+			<td>
+				<input type="text" ng-model="title" placeholder="100px or 40%">
+			</td>
+		</tr>
+		<tr>
+			<td>Content:</td>
+			<td>
+				<textarea ng-model="content" style="width:400px;" col="10" rows="5" placeholder="some text or HTML content" ng-change="iframe=''; youtube=''; youtubeurl='';divwithclass='';"></textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Position:</td>
+			<td>
+				<select ng-model="position">
+					<option value="center">Center</option>
+					<option value="fixed">Fixed position</option>
+				</select>
+				<br>
+				Custon fixed position or center of the screen
+			</td>
+		</tr>
+		<tr ng-hide="position === 'center'">
+			<td>Top:</td>
+			<td>
+				<input type="text" ng-model="top" id="txttop" placeholder="100px or 40%" ng-change="fnCheckTopBottom()">
+				<br>
+				Distance of the top. (Bottom property most be empty)
+			</td>
+		</tr>
+		<tr ng-hide="position === 'center'">
+			<td>Bottom:</td>
+			<td>
+				<input type="text" ng-model="bottom" id="txtbottom" placeholder="100px or 40%" ng-change="fnCheckTopBottom()">
+				<br>
+				Distance of the bottom. (Top property most be empty)
+			</td>
+		</tr>
+		<tr ng-hide="position === 'center'">
+			<td>Left:</td>
+			<td>
+				<input type="text" ng-model="left" id="txtleft" placeholder="100px or 40%" ng-change="fnCheckLeftRight()">
+				Distance from the left side. (Right property most be empty)
+				<br>
+			</td>
+		</tr>
+		<tr ng-hide="position === 'center'">
+			<td>Right:</td>
+			<td>
+				<input type="text" ng-model="right" id="txtright" placeholder="100px or 40%" ng-change="fnCheckLeftRight()">
+				<br>
+				Distance from the right side. (Left property most be empty)
+			</td>
+		</tr>
+		<tr>
+			<td>In Animation:</td>
+			<td>
+				<select ng-model="animation">
+					<option value="bounceIn">bounceIn</option>
+					<option value="fade">fade</option>
+				</select>
+				<br>
+				Yose Modal appear with this animation
+			</td>
+		</tr>
+		<tr>
+			<td>Out Animation:</td>
+			<td>
+				<select ng-model="animationout">
+					<option value="fade">fade</option>
+					<option value="side">side</option>
+				</select>
+				<br>
+				Yose Modal dissapear with this animation
+			</td>
+		</tr>
+		<tr>
+			<td>In time:</td>
+			<td>
+				<select ng-model="intime">
+					<option value="0">Right away</option>
+					<option value="0.5">0.5 seconds</option>
+					<option value="0.6">0.6 seconds</option>
+					<option value="0.7">0.7 seconds</option>
+					<option value="0.8">0.8 seconds</option>
+					<option value="0.9">0.9 seconds</option>
+					<option value="1.5">1.5 seconds</option>
+				</select>
+				<br>
+				Yose Modal appear with this animation
+			</td>
+		</tr>
+		<tr>
+			<td>Delay In:</td>
+			<td>
+				<select ng-model="indelay">
+					<option value="0">Right away</option>
+					<option value="0.1">0.1 seconds</option>
+					<option value="0.2">0.2 seconds</option>
+					<option value="0.3">0.3 seconds</option>
+					<option value="0.4">0.4 seconds</option>
+					<option value="0.5">0.5 seconds</option>
+					<option value="0.9">0.9 seconds</option>
+					<option value="1.5">1.5 seconds</option>
+					<option value="2">2 seconds</option>
+				</select>
+				<br>
+				Seconds to delay the appear
+			</td>
+		</tr>
+		<tr>
+			<td>Width:</td>
+			<td>
+				<input type="text" ng-model="width" placeholder="100px or 40%">
+				<br>
+				Width of the modal
+			</td>
+		</tr>
+		<tr>
+			<td>Height:</td>
+			<td>
+				<input type="text" ng-model="height" placeholder="100px or 40% (optional)">
+				<br>
+				(Optional)<br/> If you don't specify anything, it will addapt to the content
+			</td>
+		</tr>
+		<tr>
+			<td>Close on click outside:</td>
+			<td>
+				<select ng-model="closeonclick">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Click outside, closes the Modal?
+			</td>
+		</tr>
+		<tr>
+			<td>Show buttons:</td>
+			<td>
+				<select ng-model="showbuttons">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Want to show the buttons bar?
+			</td>
+		</tr>
+		<tr>
+			<td>Red button:</td>
+			<td>
+				<select ng-model="red">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Enable or disabled the Red Button
+			</td>
+		</tr>
+		<tr>
+			<td>Yellow:</td>
+			<td>
+				<select ng-model="yellow">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Enable or disabled the Yellow Button
+			</td>
+		</tr>
+		<tr>
+			<td>Green:</td>
+			<td>
+				<select ng-model="green">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Enable or disabled the Green Button
+			</td>
+		</tr>
+		<tr>
+			<td>Faicon:</td>
+			<td>
+				<select ng-model="faicon" ng-onchange="setIcon(); img='false'; imgrounded='false';">
+					<option value="x">[ No Icon ]</option>
+					<option ng-repeat="icon in faicons | orderBy:'icon'"  value="{{icon}}">{{fnCut(icon)}}</option>
+				</select>
+				&nbsp;&nbsp;
+				<i class="fa {{faicon}} fa-2x"></i>
+				<br>
+				Font-Awesome icon
+				<br> Click <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="blank">Here</a> for a complete list of icons
+			</td>
+		</tr>
+		<tr>
+			<td>Img:</td>
+			<td>
+				<select ng-model="img" ng-change="faicon = 'x'">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Do you want a custom image?
+			</td>
+		</tr>
+		<tr>
+			<td>Rounded Image:</td>
+			<td>
+				<select ng-model="imgrounded">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Do you want to make it rounded?
+			</td>
+		</tr>
+		<tr>
+			<td>Theme:</td>
+			<td>
+				<select ng-model="theme">
+					<option value="white">white</option>
+					<option value="black">black</option>
+					<option value="pink">pink</option>
+					<option value="purp">purp</option>
+					<option value="green">green</option>
+					<option value="red">red</option>
+				</select>
+				<br>
+				Pick a theme you want
+			</td>
+		</tr>
+		<tr>
+			<td>Backscreen:</td>
+			<td>
+				<select ng-model="backscreen">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Want to block the screen?
+			</td>
+		</tr>
+		<tr>
+			<td>Backcolor:</td>
+			<td>
+				<input type="text" ng-model="backcolor" class="color" value="000000">
+				<br>
+				Color of the back screen?
+			</td>
+		</tr>
+		<tr>
+			<td>Background opacity:</td>
+			<td>
+				<select ng-model="bgopacity">
+					<option value="0.1">0.1</option>
+					<option value="0.2">0.2</option>
+					<option value="0.3">0.3</option>
+					<option value="0.4">0.4</option>
+					<option value="0.5">0.5</option>
+					<option value="0.6">0.6</option>
+					<option value="0.7">0.7</option>
+					<option value="0.8">0.8</option>
+					<option value="0.9">0.9</option>
+					<option value="1">1.0</option>
+				</select>
+				<br>
+				Select the opacity
+			</td>
+		</tr>
+		<tr>
+			<td>Iframe:</td>
+			<td>
+				<input type="text" ng-model="iframe" style="width:350px" placeholder="your iframe URL" ng-change="content=''; youtubeurl=''; youtube=''; divwithclass='';">
+				<br>
+				URL of the page that you want to show
+				<br>
+				<label class="label label-info">Important:</label>
+				<br>
+				By changing this value, the content property will be erased.
+				<br>
+				<a ng-click="iframe='http://en.m.wikipedia.org/wiki/Main_Page'; content=''; youtubeurl=''; youtube=''; divwithclass='';">Click me for one example:</a> Wikipedia page.
+			</td>
+		</tr>
+		<tr>
+			<td>Iframe with cache:</td>
+			<td>
+				<select ng-model="iframecache">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Disable iframe cache?
+			</td>
+		</tr>
+		<tr>
+			<td>iFrame loading message:</td>
+			<td>
+				<input type="text" ng-model="loadingmessage" placeholder="loading">
+				<br>
+				For a custom loading message
+			</td>
+		</tr>
+		<tr>
+			<td>Loading icon:</td>
+			<td>
+				<select ng-model="loadingicon">
+					<option ng-repeat="icon in faloading" value="{{icon}}">{{fnCut(icon)}}</option>
+				</select>
+				&nbsp;&nbsp;
+				<i class="fa {{loadingicon}} fa-spin fa-2x"></i>
+				<br>
+				Pick a loading icon
+			</td>
+		</tr>
+		<tr>
+			<td>Timeout:</td>
+			<td>
+				<select ng-model="timeout">
+					<option value="0">No</option>
+					<option value="1">1 second</option>
+					<option value="2">2 seconds</option>
+					<option value="3">3 seconds</option>
+					<option value="4">4 seconds</option>
+					<option value="5">5 seconds</option>
+					<option value="6">6 seconds</option>
+				</select>
+				<br>
+				Auto close in
+			</td>
+		</tr>
+		<tr>
+			<td>Youtube:</td>
+			<td>
+				<input type="text" ng-model="youtubeurl" style="width:350px" ng-change="fnCutVideo()" 
+					   placeholder="https://www.youtube.com/watch?v=roHaEWT2g0o"><br>
+				<input type="text" ng-model="youtube" placeholder="youtube url" readonly="readonly">
+				<br>
+				<label class="label label-info">Important:</label>
+				<br>
+				By changing this value, the content and iFrame property will be erased.
+				<br>
+				<a ng-click="youtubeurl='https://www.youtube.com/watch?v=roHaEWT2g0o'; iframe=''; content='';fnCutVideo();">Click me for one example:</a> Conan
+			</td>
+		</tr>
+		<tr>
+			<td>Youtubecontrols:</td>
+			<td>
+				<select ng-model="youtubecontrols">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Wanna show the youtube controls?
+			</td>
+		</tr>
+		<tr>
+			<td>Youtubeinfo:</td>
+			<td>
+				<select ng-model="youtubeinfo">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Show the youtube information bar?
+			</td>
+		</tr>
+		<tr>
+			<td>Unique Class to turn it into a YoseModal:</td>
+			<td>
+				<input type="text" ng-model="divwithclass" placeholder="uniqueclass" ng-change="content='';youtube=''; youtubeurl=''; iframe='';">
+				<br>
+				Syntactically, the div that you want to transform into a Yose Modal
+			</td>
+		</tr>
+		<tr>
+			<td>Mobilehidebuttons:</td>
+			<td>
+				<select ng-model="mobilehidebuttons">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+				<br>
+				Force to hide the buttons on mobile phones
+			</td>
+		</tr>
+		<tr>
+			<td>Close Callback:</td>
+			<td>
+				<select ng-model="callback">
+					<option value="true">true</option>
+					<option value="false">false</option>
+				</select>
+			</td>
+		</tr>
+
+
+
+
+	</table>
+
+
+	
+
+</div>
+
+
+<div class="divNeeded">
+
+	<textarea id="txtCodeNeeded" ng-model="codeneeded" placeholder="this is the code you need"></textarea>
+	<br>
+	<div align="center">
+		<button class="btn btn-primary" ng-click="GetCode()"><i class="fa fa-newspaper-o"></i> Generate the code </button>
+		<button class="btn btn-info" ng-click="TestCode()"><i class="fa fa-eraser"></i> Test the code </button>
+	</div>
+
+</div>
+
+
+<button id="botClose" class="btn btn-danger" ng-click="CloseAll();"><i class="fa fa-trash"></i> Force to close the modal </button>
+
+<script src="static/js/generator.js"></script>
+
+</body>
+</html>

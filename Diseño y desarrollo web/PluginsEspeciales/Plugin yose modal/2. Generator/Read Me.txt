@@ -1,0 +1,14 @@
+/* ======================================== */
+/* 			Yose Modal Generator 			*/
+/* ======================================== */
+
+1 - Just run the index.html file to open the generator.
+
+2 - Please, do not use the YoseModal.min.js or YoseModal.js or any file in this folder. Because is addapted for the generator and may not work well on your project.
+
+3 - You can use the files inside the "Tutorial" folder or "Main Files" folder.
+
+4 - Thank you again for supporting my code.
+
+
+Have a great day!

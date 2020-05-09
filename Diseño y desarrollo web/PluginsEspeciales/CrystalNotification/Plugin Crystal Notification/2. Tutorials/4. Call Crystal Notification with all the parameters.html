@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<!-- If you want responsive desing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<!-- jQuery needed to run the puglin (needed if you are not using any jQuery library) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	
+	<!-- crystalnotifications CSS (needed) -->
+	<link rel="stylesheet" type="text/css" href="static/css/crystalnotifications.min.css">
+
+	<!-- crystalnotifications JS (needed) -->
+	<script src="static/js/crystalnotifications.min.js"></script>
+
+
+</head>
+<body>
+
+
+<button id="TestButton">Press Me!</button>
+
+
+
+
+<script type="text/javascript">
+
+
+
+$("#TestButton").on("click",function(){
+
+	$.CrystalNotification({
+		title: "This is my title",   // Title
+		image: "static/img/Colorfull/Messages-colorfull.png", // Image
+		content: "Write some content...", // Content
+		sound: true, // If you want to disabled or enabled the sound
+		panelbutton: true, // If you want to show or not the button line that shows the Notification Center
+		closebutton: true, // If you want to hide the Close button
+		timeout: 4000, // Timeout to autoclose and execute a callback if is set
+		addtopanel: true, // if you don't want to display it on the notification center
+	});
+
+});
+
+
+
+	
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

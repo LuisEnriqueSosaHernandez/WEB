@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yose Modal</title>
+	
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Yose Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/yosemodal.min.css">
+
+	<!-- Gsap Animations -->
+	<script src="static/js/gsap.js"></script>
+
+	<!-- Yose Modal JS -->
+	<script src="static/js/yosemodal.min.js"></script>
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+
+
+<button id="butClick">Show Wikipedia</button>
+
+
+
+
+<script type="text/javascript">
+
+// Launch on form load
+$("#butClick").on("click",function(){
+
+	//Yose Modal call
+	$.yosemodal({
+		animation: "bounceIn",
+		title: "Wikipedia",
+		iframe: "http://en.m.wikipedia.org/wiki/Main_Page",
+		height: "500px",
+		width: "500px",
+	});
+
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>

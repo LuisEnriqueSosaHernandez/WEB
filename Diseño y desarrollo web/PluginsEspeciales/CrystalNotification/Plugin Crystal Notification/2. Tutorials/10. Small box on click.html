@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<!-- If you want responsive desing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<!-- jQuery needed to run the puglin (needed if you are not using any jQuery library) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	
+	<!-- crystalnotifications CSS (needed) -->
+	<link rel="stylesheet" type="text/css" href="static/css/crystalnotifications.min.css">
+
+	<!-- crystalnotifications JS (needed) -->
+	<script src="static/js/crystalnotifications.min.js"></script>
+
+	<style>
+		#butPress{
+			position: fixed;
+			top: 50%;
+			left:50%;
+		}
+	</style>
+
+</head>
+<body>
+
+
+<button id="butPress">Press me</button>
+
+
+
+
+<script type="text/javascript">
+
+$("#butPress").on("click",function(){
+
+	$.CrystalNotification({
+		position: 1, 
+		title: "Hello!",
+		image: "static/img/Colorfull/Messages-colorfull.png",
+		content: "Ready to go!",
+	});
+
+	$.CrystalNotification({
+		position: 2, 
+		title: "Hello!",
+		image: "static/img/Colorfull/Messages-colorfull.png",
+		content: "Ready to go!",
+	});
+
+	$.CrystalNotification({
+		position: 3, 
+		title: "Hello!",
+		image: "static/img/Colorfull/Messages-colorfull.png",
+		content: "Ready to go!",
+	});
+
+	$.CrystalNotification({
+		position: 4, 
+		title: "Hello!",
+		image: "static/img/Colorfull/Messages-colorfull.png",
+		content: "Ready to go!",
+	});
+	
+
+
+
+});
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

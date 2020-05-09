@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<!-- If you want responsive desing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<!-- jQuery needed to run the puglin (needed if you are not using any jQuery library) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	
+	<!-- crystalnotifications CSS (needed) -->
+	<link rel="stylesheet" type="text/css" href="static/css/crystalnotifications.min.css">
+
+	<!-- crystalnotifications JS (needed) -->
+	<script src="static/js/crystalnotifications.min.js"></script>
+
+
+</head>
+<body>
+
+
+<button id="TestButton">Press Me!</button>
+
+
+
+
+<script type="text/javascript">
+
+
+
+$("#TestButton").on("click",function(){
+
+	$.CrystalNotification({
+		title: "This is my title", 
+		image: "static/img/Colorfull/Messages-colorfull.png",
+		content: "Write some content...",
+		panelbutton: false,
+	},function(){
+		alert("Callback!");
+	});
+
+});
+
+
+
+	
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

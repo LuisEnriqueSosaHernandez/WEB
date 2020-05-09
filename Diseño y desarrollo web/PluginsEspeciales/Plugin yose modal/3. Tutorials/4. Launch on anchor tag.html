@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yose Modal</title>
+	
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Yose Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/yosemodal.min.css">
+
+	<!-- Gsap Animations -->
+	<script src="static/js/gsap.js"></script>
+
+	<!-- Yose Modal JS -->
+	<script src="static/js/yosemodal.min.js"></script>
+
+	<!-- Font Awesome  -->
+	<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+
+
+<a href="" id="lnkLink">Click me plz</a>
+
+
+
+
+<script type="text/javascript">
+
+// Launch on form load
+$("#lnkLink").on("click",function(e){
+
+	e.preventDefault();
+
+	//Yose Modal call
+	$.yosemodal({
+		animation: "bounceIn",
+		title: "Hey",
+		content: "Hello World!"
+	});
+
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>

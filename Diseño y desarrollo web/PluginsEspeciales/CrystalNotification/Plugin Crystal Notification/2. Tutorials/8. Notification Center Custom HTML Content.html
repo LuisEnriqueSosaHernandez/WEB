@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<!-- If you want responsive desing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<!-- jQuery needed to run the puglin (needed if you are not using any jQuery library) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	
+	<!-- crystalnotifications CSS (needed) -->
+	<link rel="stylesheet" type="text/css" href="static/css/crystalnotifications.min.css">
+
+	<!-- crystalnotifications JS (needed) -->
+	<script src="static/js/crystalnotifications.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+
+	$.CrystalNotificationPanel({
+		title: "Google Maps",
+		image: "static/img/Colorfull/Google-Maps-128.png",
+		content: '<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=san+jose+costa+rica&amp;aq=&amp;sll=43.281204,-7.921143&amp;sspn=2.847262,5.811768&amp;ie=UTF8&amp;hq=&amp;hnear=San+Jos%C3%A9,+Costa+Rica&amp;ll=9.927128,-84.082012&amp;spn=0.060197,0.090809&amp;t=m&amp;z=14&amp;output=embed"></iframe>',
+	});	
+
+	$.CrystalNotificationPanel({
+		title: "YouTube", 
+		image: "static/img/Youtube-128.png",
+		content: '<iframe width="100%" height="315" src="http://www.youtube.com/embed/5EjG-1U3wqA" frameborder="0" allowfullscreen></iframe>'
+	});
+
+
+
+
+//Show the panel
+	ShowCrystalNotificationPanel();
+
+});
+
+
+
+	
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

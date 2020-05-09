@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Crystal Notification v2 - Notifications and Notification Center</title>
+ 	<meta name="description" content="">
+	<meta name="author" content="Klerith">
+	<meta name="copyright" content="Klerith">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-10-20T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url();}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	
+	
+    </head>
+    
+<body class="documenter-project-crystal-notification-v2" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Crystal Notification v2 - Notifications and Notification Center</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#get_started" title="Get Started">Get Started</a></li>
+			<li><a href="#crystal_notification_properties" title="Crystal Notification Properties">Crystal Notification Properties</a></li>
+			<li><a href="#crystalnotificationpanel" title="CrystalNotificationPanel">CrystalNotificationPanel</a></li>
+			<li><a href="#special_functions" title="Special Functions">Special Functions</a></li>
+			<li><a href="#tutorials" title="Tutorials">Tutorials</a></li>
+			<li><a href="#tutorial_1" title="Tutorial #1">Tutorial #1</a></li>
+			<li><a href="#tutorial_2" title="Tutorial #2">Tutorial #2</a></li>
+			<li><a href="#tutorial_3" title="Tutorial #3">Tutorial #3</a></li>
+			<li><a href="#tutorial_4" title="Tutorial #4">Tutorial #4</a></li>
+			<li><a href="#tutorial_5" title="Tutorial #5">Tutorial #5</a></li>
+			<li><a href="#tutorial_6" title="Tutorial #6">Tutorial #6</a></li>
+			<li><a href="#tutorial_7" title="Tutorial #7">Tutorial #7</a></li>
+			<li><a href="#tutorial_8" title="Tutorial #8">Tutorial #8</a></li>
+			<li><a href="#tutorial_9" title="Tutorial #9">Tutorial #9</a></li>
+			<li><a href="#tutorial_10" title="Tutorial #10">Tutorial #10</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Crystal Notification v2 - Notifications and Notification Center</h1>
+	    <p></p>
+	    <ul class="marketing-byline">
+			<li>created: 03/10/2011</li>
+			<li>latest update: 10/20/2014</li>
+			<li>by: Klerith</li>
+			<li><a href="http://codecanyon.net/user/klerith">codecanyon.net/user/klerith</a></li>
+		</ul>
+	    <p class="download-info">
+			<a href="http://codecanyon.net/user/klerith?ref=klerith" class="btn btn-primary btn-large">Klerith's Profile</a> <a href="http://codecanyon.net/user/klerith/portfolio?ref=klerith" class="btn btn-large">Portfolio</a> 
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<p>
+	Thank you purchasing this product. I hope this help you to achieve your goal and make your website or mobile app more awesome</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<div>
+	In this documentation, you will find the basic installation, properties and special functions to control the plugin.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	It&#39;s hard to explain with words, and thats why I created 10 different tutorials that will show you how to use the plugin and functions.</div>
+</section>
+<section id="get_started">
+	<div class="page-header"><h3>Get Started</h3><hr class="notop"></div>
+<p>
+	&nbsp;</p>
+<div>
+	Add this in your head section</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+&lt;script src=&quot;static/js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;</pre>
+<div>
+	IMPORTANT!</div>
+<div>
+	This is the standard jQuery library, you don&#39;t need to import it if you are using other version.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-css linenums">
+&lt;!-- crystalnotifications CSS (needed) --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/css/crystalnotifications.min.css&quot;&gt;</pre>
+<div>
+	Add the Crystal Notification CSS (the style). I recommend you to use the minify version. because is much lighter and more secure.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+&lt;!-- crystalnotifications JS (needed) --&gt;
+&lt;script src=&quot;static/js/crystalnotifications.min.js&quot;&gt;&lt;/script&gt;</pre>
+<div>
+	This files contains all the functions and calculations. This is required to make it work.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="crystal_notification_properties">
+	<div class="page-header"><h3>Crystal Notification Properties</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 700px;">
+	<thead>
+		<tr>
+			<th scope="row">
+				Property</th>
+			<th scope="col">
+				Default</th>
+			<th scope="col">
+				Optional</th>
+			<th scope="col">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">
+				position</th>
+			<td>
+				0</td>
+			<td>
+				1,2,3,4 and 0</td>
+			<td>
+				Crystal notification position.</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				width</th>
+			<td>
+				300</td>
+			<td>
+				450</td>
+			<td>
+				Max-width of the Crystal Notification</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				title</th>
+			<td>
+				Crystal Notification title</td>
+			<td>
+				&quot;Any string&quot;</td>
+			<td>
+				You can add any kind of string here, this is going to be the group title on the Crystal Notification Center</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				content</th>
+			<td>
+				&quot;&quot;</td>
+			<td>
+				Any kind of string or small HTML fragment</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				image</th>
+			<td>
+				undefined</td>
+			<td>
+				&quot;path/of/image&quot;</td>
+			<td>
+				Image path</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				sound</th>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled the sound</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				panelbutton</th>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				If you want to show the white line that show the notification center</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				closebutton</th>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Show or hide the Close icon.</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				smallcloseclick</th>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Enabled or disabled, close on click event</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				timeout</th>
+			<td>
+				undefined</td>
+			<td>
+				3000</td>
+			<td>
+				3000 = 3 seconds, 5000 = 5 seconds</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				addtopanel</th>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Add to the notification center.</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				soundpath</th>
+			<td>
+				&quot;static/sound&quot;</td>
+			<td>
+				&quot;path/of/sound&quot;</td>
+			<td>
+				If you are using a different path.</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="crystalnotificationpanel">
+	<div class="page-header"><h3>CrystalNotificationPanel</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 700px;">
+	<thead>
+		<tr>
+			<th scope="row">
+				Property</th>
+			<th scope="col">
+				Default</th>
+			<th scope="col">
+				Optional</th>
+			<th scope="col">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">
+				title</th>
+			<td>
+				&quot;Information&quot;</td>
+			<td>
+				&quot;Any String&quot;</td>
+			<td>
+				This is the main group title</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				image</th>
+			<td>
+				undefined</td>
+			<td>
+				&quot;path/of/image&quot;</td>
+			<td>
+				Image URL</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				content</th>
+			<td>
+				&quot;&quot;</td>
+			<td>
+				Small HTML fragment or any text</td>
+			<td>
+				This is the notification center content</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				show</th>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				This is not required for anything, I use this property to control some stuff.</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				showpanel</th>
+			<td>
+				false</td>
+			<td>
+				true</td>
+			<td>
+				Show panel right after you call it.<br>
+				There are a couple of ways to show the notification center, this is one of them.</td>
+		</tr>
+	</tbody>
+</table>
+</section>
+<section id="special_functions">
+	<div class="page-header"><h3>Special Functions</h3><hr class="notop"></div>
+<p>
+	This functions will show you how to change the behavior of this plugin.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Check the tutorials and you will have a better idea on how to use them.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h2>
+	NukeAllTheNotifications()</h2>
+<p>
+	Remove all the items inside the Notification Center and will show the Empty Label.&nbsp;</p>
+<p>
+	If you want to change this label, simply open the CrystalNotification.js, modify line 17:</p>
+<pre class="prettyprint lang-js linenums">
+var cnEmptyMessage = &quot;You don&#39;t have any notifications.&quot;;</pre>
+<p>
+	&nbsp;</p>
+<h2>
+	CloseAllCrystals()</h2>
+<p>
+	Close all the Crystal Notifications in the visible area. (Callback functions won&#39;t be perform unless has timeout)</p>
+<p>
+	&nbsp;</p>
+<h2>
+	CloseCrystalNotificationPanel()</h2>
+<p>
+	Close the notification Panel</p>
+<p>
+	&nbsp;</p>
+<h2>
+	ShowCrystalNotificationPanel()</h2>
+<p>
+	Show the Cotification Center</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="tutorials">
+	<div class="page-header"><h3>Tutorials</h3><hr class="notop"></div>
+<p>
+	&nbsp;</p>
+<div>
+	For making this clear enough, I made 8 tutorials.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	I will explain it one by one.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Let&#39;s get started, Open the tutorial folder.</div>
+<div>
+	&nbsp;</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="tutorial_1">
+	<div class="page-header"><h3>Tutorial #1</h3><hr class="notop"></div>
+<h3>
+	&quot;1. Launching on form load&quot;</h3>
+<div>
+	This tutorial will fire a Crystal Notification on form load with some properties. You can add this code anywhere inside &nbsp;your &lt;body&gt; tag</div>
+<div>
+	&nbsp;</div>
+<div>
+	<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+$(document).ready(function(){
+
+$.CrystalNotification({
+
+title: &quot;Hello!&quot;,
+
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+
+content: &quot;Ready to go!&quot;,
+
+});
+
+});
+
+&lt;/script&gt;
+
+</pre>
+	<div>
+		&nbsp;</div>
+</div>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="tutorial_2">
+	<div class="page-header"><h3>Tutorial #2</h3><hr class="notop"></div>
+<h3>
+	2. Launching Notification Center on load</h3>
+<p>	Similar to the previous tutorial, but this call a special function to show/hide the Notification Panel</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+$(document).ready(function(){
+
+// Just type this on a javascript block
+
+ShowCrystalNotificationPanel();
+
+});
+
+&lt;/script&gt;</pre>
+<p>	&nbsp;</p>
+</section>
+<section id="tutorial_3">
+	<div class="page-header"><h3>Tutorial #3</h3><hr class="notop"></div>
+<h3>
+	3. Show Panel on button click</h3>
+<p>	This tutorial will help you to launch the panel on a button click.</p>
+<p>	You can set this code anywhere inside the &lt;body&gt; tag</p>
+<p>	&nbsp;</p>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+//jQuery button click function
+$(&quot;#TestButton&quot;).on(&quot;click&quot;,function(){
+
+
+// Just type this on a javascript block
+ShowCrystalNotificationPanel();
+
+
+});
+
+&lt;/script&gt;</pre>
+</section>
+<section id="tutorial_4">
+	<div class="page-header"><h3>Tutorial #4</h3><hr class="notop"></div>
+<h3>
+	4. Call Crystal Notification with all the parameters</h3>
+<p>	This tutorial will help you to understand how to change any property.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(&quot;#TestButton&quot;).on(&quot;click&quot;,function(){
+
+
+$.CrystalNotification({
+
+title: &quot;This is my title&quot;,   // Title
+
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;, // Image
+
+content: &quot;Write some content...&quot;, // Content
+
+sound: true, // If you want to disabled or enabled the sound
+
+panelbutton: true, // If you want to show or not the button line that shows the Notification Center
+
+closebutton: true, // If you want to hide the Close button
+
+timeout: 4000, // Timeout to autoclose and execute a callback if is set
+
+addtopanel: true, // if you don&#39;t want to display it on the notification center
+
+});
+
+
+});</pre>
+<p>	&nbsp;</p>
+</section>
+<section id="tutorial_5">
+	<div class="page-header"><h3>Tutorial #5</h3><hr class="notop"></div>
+<h3>
+	5. Crystal Notification with callback</h3>
+<p>	Callbacks are ways to know when the user closes or clock in the panel.</p>
+<p>	With this, you can perform an JavaScript action.</p>
+<p>	In this tutorial, you will see how fire an alert after you close the Crystal Notification.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(&quot;#TestButton&quot;).on(&quot;click&quot;,function(){
+
+$.CrystalNotification({
+
+title: &quot;This is my title&quot;, 
+
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+
+content: &quot;Write some content...&quot;,
+
+panelbutton: false,
+
+},function(){
+
+alert(&quot;Callback!&quot;);
+
+});
+
+});</pre>
+<p>	&nbsp;</p>
+</section>
+<section id="tutorial_6">
+	<div class="page-header"><h3>Tutorial #6</h3><hr class="notop"></div>
+<h3>
+	6. Notification Center populate on Form Load</h3>
+<p>	This tutorial will help you to populate the notification center. Some times you need to show a Crystal Notification to tell your user that he has something to check and then you fill the Notification Center with stuff like information about your site, google maps, a cool video, anything.</p>
+<p>	&nbsp;</p>
+<p>	This tutorial populate the Center with 4 notifications and then show the Panel.</p>
+<pre class="prettyprint lang-js linenums">
+</pre>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+
+
+$(document).ready(function(){
+
+$.CrystalNotificationPanel({
+title: &quot;Demo 1&quot;, 
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+content: &quot;Write some content...&quot;
+});
+
+$.CrystalNotificationPanel({
+title: &quot;Demo 1&quot;, 
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+content: &quot;Write some content...&quot;
+});
+
+$.CrystalNotificationPanel({
+title: &quot;Demo 1&quot;, 
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+content: &quot;Write some content...&quot;
+});
+
+$.CrystalNotificationPanel({
+title: &quot;Demo 1&quot;, 
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+content: &quot;Write some content...&quot;
+});
+
+//Show the panel
+ShowCrystalNotificationPanel();
+
+});</pre>
+<div>
+	&nbsp;</div>
+<p>	&nbsp;</p>
+</section>
+<section id="tutorial_7">
+	<div class="page-header"><h3>Tutorial #7</h3><hr class="notop"></div>
+<h3>
+	7. Notification Center Callback</h3>
+<p>	Notification Center, can manage Callbacks too. Sometimes you need to show something when your user clicks on one of the options.</p>
+<p>	&nbsp;</p>
+<p>	This is the way to do it.</p>
+<p>	&nbsp;</p>
+<p>	This tutorial will help you to understand &nbsp;this behavior. When you press an option, an Alert will be fire showing the Title Name.</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(document).ready(function(){
+
+
+$.CrystalNotificationPanel({
+title: &quot;iMessage&quot;, 
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+content: &quot;Write some content...&quot;
+},function(){
+alert(&quot;iMessage&quot;);
+});
+
+
+$.CrystalNotificationPanel({
+title: &quot;Gmail&quot;, 
+image: &quot;static/img/Colorfull/Gmail-colorfull.png&quot;,
+content: &quot;Write some content...&quot;
+},function(){
+alert(&quot;Gmail&quot;);
+});
+
+
+//Show the panel
+ShowCrystalNotificationPanel();
+
+
+});</pre>
+</section>
+<section id="tutorial_8">
+	<div class="page-header"><h3>Tutorial #8</h3><hr class="notop"></div>
+<h3>
+	8. Notification Center Custom HTML Content</h3>
+<p>
+	Crystal Notification and Crystal Notification Center, can store custom HTML content. just create a string variable with all the HTML content and that&#39;s it. Just remember to don&#39;t break the string with the ( &#39; ) or ( &quot; )</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(document).ready(function(){
+
+// This is a custom HTML that shows Google Maps
+$.CrystalNotificationPanel({
+title: &quot;Google Maps&quot;,
+image: &quot;static/img/Colorfull/Google-Maps-128.png&quot;,
+content: &#39;&lt;iframe width=&quot;100%&quot; height=&quot;400px&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.es/maps?f=q&amp;amp;source=s_q&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=san+jose+costa+rica&amp;amp;aq=&amp;amp;sll=43.281204,-7.921143&amp;amp;sspn=2.847262,5.811768&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=San+Jos%C3%A9,+Costa+Rica&amp;amp;ll=9.927128,-84.082012&amp;amp;spn=0.060197,0.090809&amp;amp;t=m&amp;amp;z=14&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&#39;,
+});<span class="Apple-tab-span" style="white-space:pre"> </span>
+
+// A youtube video.
+$.CrystalNotificationPanel({
+title: &quot;YouTube&quot;, 
+image: &quot;static/img/Colorfull/YouTube-128.png&quot;,
+content: &#39;&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/5EjG-1U3wqA&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;
+});
+
+
+
+//Show the panel
+ShowCrystalNotificationPanel();
+
+
+});</pre>
+</section>
+<section id="tutorial_9">
+	<div class="page-header"><h3>Tutorial #9</h3><hr class="notop"></div>
+<h3>
+	9. Small box on Load&nbsp;</h3>
+<p>
+	Smallbox are a new feature of Crystal Notification, you have 5 different positions</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(document).ready(function(){
+
+
+$.CrystalNotification({
+
+position: 1, // try 2, 3 and 4
+
+title: &quot;Hello!&quot;,
+
+image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,
+
+content: &quot;Ready to go!&quot;,
+
+});
+
+
+});</pre>
+<div>
+	&nbsp;</div>
+</section>
+<section id="tutorial_10">
+	<div class="page-header"><h3>Tutorial #10</h3><hr class="notop"></div>
+<h3>
+	10. Small box on click</h3>
+<p>
+	This example, show you how to call 4 crystal notifications at the same time</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+</pre>
+<div>
+	$(&quot;#butPress&quot;).on(&quot;click&quot;,function(){</div>
+<div>
+	&nbsp;</div>
+<div>
+	$.CrystalNotification({</div>
+<div>
+	position: 1,&nbsp;</div>
+<div>
+	title: &quot;Hello!&quot;,</div>
+<div>
+	image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,</div>
+<div>
+	content: &quot;Ready to go!&quot;,</div>
+<div>
+	});</div>
+<div>
+	&nbsp;</div>
+<div>
+	$.CrystalNotification({</div>
+<div>
+	position: 2,&nbsp;</div>
+<div>
+	title: &quot;Hello!&quot;,</div>
+<div>
+	image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,</div>
+<div>
+	content: &quot;Ready to go!&quot;,</div>
+<div>
+	});</div>
+<div>
+	&nbsp;</div>
+<div>
+	$.CrystalNotification({</div>
+<div>
+	position: 3,&nbsp;</div>
+<div>
+	title: &quot;Hello!&quot;,</div>
+<div>
+	image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,</div>
+<div>
+	content: &quot;Ready to go!&quot;,</div>
+<div>
+	});</div>
+<div>
+	&nbsp;</div>
+<div>
+	$.CrystalNotification({</div>
+<div>
+	position: 4,&nbsp;</div>
+<div>
+	title: &quot;Hello!&quot;,</div>
+<div>
+	image: &quot;static/img/Colorfull/Messages-colorfull.png&quot;,</div>
+<div>
+	content: &quot;Ready to go!&quot;,</div>
+<div>
+	});</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	});</div>
+<div>
+	&nbsp;</div>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Klerith 2014 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>
