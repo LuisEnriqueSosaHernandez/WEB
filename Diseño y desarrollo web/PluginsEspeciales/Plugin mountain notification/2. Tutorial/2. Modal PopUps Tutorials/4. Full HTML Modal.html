@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Demo style site -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+	<script src="static/js/jquery-ui.1.10.3.min.js"></script>
+
+	<!-- mountainnotifications CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/mountainnotifications.min.css">
+
+	<!-- mountainnotifications JS -->
+	<script src="static/js/mountainnotifications.min.js"></script>
+
+
+	
+
+</head>
+<body>
+
+
+<div align="center">
+<div class="container" >
+	
+	<h2>HTML Modal</h2>
+	<p>
+		This tutorial will help you to understand the HTML Modal
+	</p>
+	<button id="botPressMe">Show me!</button>
+	
+
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+$("#botPressMe").on("click",function(){
+	
+	$.mpModalPopUp({
+		html: '<h2 class="Normal">Hi There</h2>Im a basic side panel. I can display HTML, iFrames, Youtube videos and more! <br><br><iframe width="100%" height="200" src="http://www.youtube.com/embed/J8EBR4OK6Hg?list=PLooJOgo-8bToEW-PRePfc0q2P8RqbTpev" frameborder="0" allowfullscreen></iframe>',
+		width: "500px",
+		height: "500px",
+		blackscreen: true,
+		close: true,
+		draggable: true,
+		animation: "bounceIn",
+	})
+
+
+})
+
+</script>
+
+</body>
+</html>

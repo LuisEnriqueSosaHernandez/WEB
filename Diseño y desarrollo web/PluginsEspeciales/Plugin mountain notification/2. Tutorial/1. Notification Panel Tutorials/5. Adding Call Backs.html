@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Demo style site -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+	<script src="static/js/jquery-ui.1.10.3.min.js"></script>
+
+	<!-- mountainnotifications CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/mountainnotifications.min.css">
+
+	<!-- mountainnotifications JS -->
+	<script src="static/js/mountainnotifications.min.js"></script>
+
+
+	
+
+</head>
+<body>
+
+
+<div align="center">
+<div class="container" >
+	
+	<h2>Adding content</h2>
+	<p>
+		This tutorial will help to know how to add items
+	</p>
+
+	
+
+
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+
+	// Calling the notification Panel
+	$.mpNotificationPanel( 
+		{
+			title: "Skype!",
+			img: "static/img/Leopard/Skype.png",
+			clearbutton: true,
+			items: [{
+						title: "Fernando Herrera",
+						date: "yesterday",
+						content: "You have new message from Fernando.",
+						callback: function(){
+							alert("You Click Fernando Herrera");
+						}
+					},
+					{
+						title: "Melissa Flores",
+						date: "just now",
+						content: "Hey sweetie, this is a cool notification. Do you understand how to do it?",
+						callback: function(){
+							alert("You Click Melissa Flores");
+						}
+					}]
+		});
+
+	// Calling ounce again and will appear another pack of items
+	$.mpNotificationPanel( 
+		{
+			title: "Finder!",
+			img: "static/img/Leopard/Finder.png",
+			clearbutton: true,
+			items: [{
+						title: "New finder",
+						date: "yesterday",
+						content: "You have a really cool finder right there.",
+						callback: function(){
+							alert("You Click Finder");
+						}
+					}]
+		});
+
+
+
+
+	// This function will show the notification panel if is close... call it again, and will close it
+	mpOpenCloseBar();
+
+
+})
+
+</script>
+
+</body>
+</html>

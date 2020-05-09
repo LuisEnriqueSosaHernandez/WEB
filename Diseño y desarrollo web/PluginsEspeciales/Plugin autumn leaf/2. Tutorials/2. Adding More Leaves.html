@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autumn Leaf</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<!-- jQuery import -->
+	<script src="static/js/jquery-2.1.4.min.js"></script>
+
+	<!-- Autom Leaft Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/AutumnLeaf.min.css">
+
+	<!-- Autom Leaft JavaScript -->
+	<script src="static/js/greensock.js"></script>
+	<script src="static/js/AutumnLeaf.min.js"></script>
+
+
+	<style type="text/css">
+
+	button{
+		position: fixed;
+		top: 300px;
+		left: 300px;
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+
+
+
+<button id="botMore">
+	Add 10 More!
+</button>
+
+
+
+
+<script type="text/javascript">
+	
+$.AutumnLeafStart({
+	leafsfolder: "static/AutumnLeaves/",
+	howmanyimgsare: 8,
+	initialleafs: 10,
+	maxYposition: -10,
+	multiplyclick: true,
+	multiplynumber: 2,
+	infinite: true,
+	fallingsequence: 4000
+});
+
+
+
+
+$("#botMore").on("click",function(){
+
+	$.AutumnLeafAdd({
+		leafsfolder: "static/AutumnLeaves/",
+		add: 10,
+	});
+
+
+})
+
+</script>
+
+
+</body>
+</html>

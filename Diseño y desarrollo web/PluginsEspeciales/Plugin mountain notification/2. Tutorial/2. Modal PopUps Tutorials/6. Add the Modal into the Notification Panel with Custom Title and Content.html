@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Demo style site -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+	<script src="static/js/jquery-ui.1.10.3.min.js"></script>
+
+	<!-- mountainnotifications CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/mountainnotifications.min.css">
+
+	<!-- mountainnotifications JS -->
+	<script src="static/js/mountainnotifications.min.js"></script>
+
+
+	
+
+</head>
+<body>
+
+
+<div align="center">
+<div class="container" >
+	
+	<h2>HTML Modal</h2>
+	<p>
+		This tutorial will help you to understand the HTML Modal
+	</p>
+	<button id="botPressMe">Show me!</button>
+	
+
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+$("#botPressMe").on("click",function(){
+	
+	mpOpenCloseBar();
+
+	$.mpModalPopUp({
+		html: 'Hi again!',
+		width: "100px",
+		height: "100px",
+		blackscreen: true,
+		close: true,
+		draggable: true,
+		notificationbar: true,
+		animation: "bounceIn",
+		img: "static/img/Leopard/Finder.png",
+		title: "A new popup has arrive",
+		content: 'You can type Anything in here!, even HTML code.<br/><br/><iframe width="300" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=new+york&amp;aq=&amp;sll=39.095963,1.142578&amp;sspn=9.834133,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=Nueva+York,+Estados+Unidos&amp;ll=40.714353,-74.005973&amp;spn=0.001173,0.002642&amp;t=m&amp;z=14&amp;output=embed"></iframe>',
+
+	})
+
+
+})
+
+</script>
+
+</body>
+</html>

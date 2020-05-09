@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Demo style site -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+	<script src="static/js/jquery-ui.1.10.3.min.js"></script>
+
+	<!-- mountainnotifications CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/mountainnotifications.min.css">
+
+	<!-- mountainnotifications JS -->
+	<script src="static/js/mountainnotifications.min.js"></script>
+
+
+	
+
+</head>
+<body>
+
+
+<div align="center">
+<div class="container" >
+	
+	<h2>Input Text</h2>
+	<p>
+		Type: Text
+	</p>
+	<button id="botPressMe">Show me!</button>
+	
+
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+$("#botPressMe").on("click",function(){
+	
+	$.mpInputBox({
+		type: "text",
+		selectvalues: undefined,
+		withheader: false,
+		headertext: '',
+		width: "453px",
+		title: "What's your favorite color?",
+		content: "C'mon don't be shy :)",
+		img: "static/img/Leopard/Finder.png",
+		draggable: true,
+		placeholder: "Type here your favorite color",
+		buttons: "[Accept]",
+		animation: "bounceIn"
+
+	},function(value, buttonpress){
+		alert("Here's your answers: " +value +" and you press " + buttonpress);
+	});
+
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+=========================
+		Change Log
+=========================
+Current Version 2 (Big update here):
+
+1 - I rebuild the code from the ground, using better and much strong animations
+2 - All the properties are in lower case (beware)
+3 - Bug fixes
+4 - css corrections
+5 - Smooth and more natural falling
+6 - New library added for better update mechanism

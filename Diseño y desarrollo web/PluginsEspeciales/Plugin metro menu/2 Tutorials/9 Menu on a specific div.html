@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Metro Menu</title>
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+
+	<!-- Metro Menu Style -->
+	<link href="static/css/MetroMenu.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<!-- Metro Menu JS -->
+	<script src="static/js/MetroMenu.js"></script>
+
+	<!-- Font Awesome 4.0.2 -->
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+
+	<style type="text/css">
+
+		#MetroMenuDiv{
+			height: 85px;
+			width: 100%;
+			background-color: #662d91;
+		}
+
+	</style>
+
+</head>
+<body>
+
+Some times you need this menu in a specific div.
+
+<br/><br/>
+
+So here is what you want to do.
+
+
+<br/><br/>
+
+
+<div id="MetroMenuDiv"></div>
+
+<br/><br/>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+	$.MetroMenu( 
+		{
+			backicon: "static/img/back.png", // Sub menu back item
+			animation: "fadeInLeft",  // Animation
+			position: "top",  // Position
+			withtooltip: false, // Show tooltip on mouse over
+			divholderid: "MetroMenuDiv", // Div to attach the metro meno in.
+			closeonclick: false, // Menu item click, close the menu
+			escclose: false,  // ESC key, close the menu
+			items:[
+				{   name: "Calendar",
+					icon: "static/img/calendar.png"
+				},
+				{   name: "Office",
+					icon: "static/img/office.png"
+				},
+				{   name: "Mailing",
+					icon: "static/img/mail.png"					
+				},
+				{   name: "Adobe Suit",
+					icon: "static/img/ps.png"
+				},
+				{   name: "Options",
+					icon: "static/img/gear.png"
+				}]
+		},
+		function(OptionPress)
+		{
+			alert("Selected option: " + OptionPress);
+		}
+	);
+
+
+});
+
+</script>
+
+
+
+</body>
+</html>

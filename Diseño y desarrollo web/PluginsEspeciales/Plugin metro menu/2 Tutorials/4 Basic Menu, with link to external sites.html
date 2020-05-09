@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Metro Menu</title>
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+
+	<!-- Metro Menu Style -->
+	<link href="static/css/MetroMenu.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<!-- Metro Menu JS -->
+	<script src="static/js/MetroMenu.js"></script>
+
+	<!-- Font Awesome 4.0.2 -->
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	
+
+</head>
+<body>
+
+
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+	$.MetroMenu( 
+		{
+			backicon: "static/img/back.png", // Sub menu back item
+			animation: "fadeInLeft",  // Animation
+			position: "left",  // Position
+			withtooltip: true, // Show tooltip on mouse over
+			closeonclick: false, // Menu item click, close the menu
+			escclose: true,  // ESC key, close the menu
+			items:[
+				{   name: "Apple",
+					icon: "static/img/apple.png",
+					link: "http://www.apple.com/"
+				},
+				{   name: "Windows",
+					icon: "static/img/office.png",
+					link: "http://www.microsoft.com"
+				}]
+		}
+	);
+
+
+});
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Metro Menu</title>
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+
+	<!-- Metro Menu Style -->
+	<link href="static/css/MetroMenu.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<!-- Metro Menu JS -->
+	<script src="static/js/MetroMenu.js"></script>
+
+	<!-- Font Awesome 4.0.2 -->
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+	<!-- This is not required... just a demo to show scroll -->
+	<link href="static/css/demo.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+
+
+	<h1>Header</h1>
+	<p>Just use move: "top"</p>
+
+
+	<h1 id="NewSection1">A new section 1</h1>
+	<p>Assing and unique ID to the element that you want to scroll</p>
+
+	<h1 id="NewSection2">A new section 2</h1>
+	<p>Assing and unique ID to the element that you want to scroll</p>
+
+	<h1>Bottom?</h1>
+	<p>If you want to move the scroll to your bottom, you can use:  move: "bottom"</p>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+	$.MetroMenu( 
+		{
+			backicon: "static/img/back.png", // Sub menu back item
+			animation: "fadeInLeft",  // Animation
+			position: "bottom",  // Position
+			withtooltip: true, // Show tooltip on mouse over
+			closeonclick: false, // Menu item click, close the menu
+			escclose: true,  // ESC key, close the menu
+			items:[
+				{   name: "To Header",
+					icon: "static/img/gear.png",
+					move: "top"
+				},
+				{   name: "New Section",
+					icon: "static/img/gear.png",
+					move: "#NewSection1" // You need to use hashtag
+				},
+				{   name: "New section 2",
+					icon: "static/img/gear.png",
+					move: "#NewSection2" // You need to use hashtag
+				},
+				{   name: "Bottom",
+					icon: "static/img/gear.png",
+					move: "bottom",
+				},
+				{   name: "Speed Control",
+					icon: "static/img/gear.png",
+					move: "top",
+					time: 1000
+				}]
+		}
+	);
+
+
+});
+
+</script>
+
+
+
+</body>
+</html>

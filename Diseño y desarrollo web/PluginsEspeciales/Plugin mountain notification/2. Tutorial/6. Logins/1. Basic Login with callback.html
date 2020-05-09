@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mountain Pack</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Demo style site -->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.9.0.min.js"></script>
+	<script src="static/js/jquery-ui.1.10.3.min.js"></script>
+
+	<!-- mountainnotifications CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/mountainnotifications.min.css">
+
+	<!-- mountainnotifications JS -->
+	<script src="static/js/mountainnotifications.min.js"></script>
+
+
+	
+
+</head>
+<body>
+
+
+<div align="center">
+<div class="container" >
+	
+	<h2>Basic Login</h2>
+	<p>
+		This tutorial will help you to understand a basic Login
+	</p>
+	<button id="botPressMe">Show me!</button>
+	
+
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+$("#botPressMe").on("click",function(){
+	
+	$.mpLogin({
+		withheader: false,
+		width: "493px",
+		content: '',
+		img: "static/img/Lock-HD-256 Settings.png",
+		timeout: undefined,
+		draggable: true,
+	},function(buttonPress,user,password){
+		alert(buttonPress +" "+ user + " " + password);
+	})
+
+})
+
+</script>
+
+</body>
+</html>
