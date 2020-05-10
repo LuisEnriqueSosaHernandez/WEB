@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metro Modal</title>
+	<!-- For responsive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- For responsive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Metro Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/metromodal.min.css">
+
+	<!-- Metro Modal JS -->
+	<script src="static/js/metromodal.min.js"></script>
+
+	<!-- Google Maps Api (needed if you are using some Google Maps functionality -->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</head>
+<body>
+
+
+
+<h1>Tutorial #9</h1>
+<h2>Using Google Maps</h2>
+
+<button id="botPress">Click Me</button>
+
+
+
+<script type="text/javascript">
+
+$("#botPress").on("click",function(){
+
+
+	$.MetroModal({
+			width: "600px",
+			height: "338px",
+			title: "Tour Eiffel",
+			controls: false,
+			googlelatitud: 48.858352, 
+			googlelongitud: 2.294465,
+			googlezoom: 17,
+			googlemaptypeid: "roadmap",
+		});
+
+});
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+		
+			
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+	
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+		
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				padding: 20px;
+				width: 100%;
+			}
+
+			.samplebox{
+
+			}
+
+			.samplebox img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 565px;
+				height: 401px;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+	<div class="samplebox">
+		
+		<img src="img/bakery/10.png" class="klanimate" alt="background">
+
+		<img src="img/bakery/1.png" class="klanimate" data-delay="0.2" data-x="-100" alt="leaf left">
+		
+		<img src="img/bakery/8.png" class="klanimate" data-delay="1" data-y="-150" data-animation="bounce" alt="building">
+		<img src="img/bakery/7.png" class="klanimate" data-delay="1.5" data-y="-150" data-animation="bounce" alt="door">
+		<img src="img/bakery/6.png" class="klanimate" data-delay="0.6" data-y="100" alt="floor">
+		<img src="img/bakery/4.png" class="klanimate" data-delay="1.8" data-y="100" alt="chair">
+		<img src="img/bakery/5.png" class="klanimate" data-delay="1.7" data-x="100" data-animation="bounce" alt="announce">
+		<img src="img/bakery/3.png" class="klanimate" data-delay="0.8" data-x="-150" data-animation="back" alt="bicicle">
+		<img src="img/bakery/9.png" class="klanimate" data-delay="2" data-x="-250" data-animation="back" alt="sign">
+		
+		<img src="img/bakery/2.png" class="klanimate" data-delay="0.4" alt="leaf right">
+	</div>
+
+
+
+
+
+
+		
+		<script>
+			// by changin some properties here, you can modify the default behavior of 
+			// all the animations
+			$.klAnimate();
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Tour Tip Guide - Responsive, Touch Enabled... is like an APP!!!</title>
+ 	<meta name="description" content="Quick tour guide for you website. jQuery - Plugin
+">
+	<meta name="author" content="Klerith">
+	<meta name="copyright" content="Klerith">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-03-25T00:00:00+01:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url();}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	
+	
+    </head>
+    
+<body class="documenter-project-tour-tip-guide" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Tour Tip Guide - Responsive, Touch Enabled... is like an APP!!!</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#main_functions" title="Main Functions">Main Functions</a></li>
+			<li><a href="#tour_tip_guide_tour_function" title="Tour Tip Guide - Tour function">Tour Tip Guide - Tour function</a></li>
+			<li><a href="#tour_tip_available_attributes" title="Tour Tip available attributes">Tour Tip available attributes</a></li>
+			<li><a href="#tour_tip_call" title="Tour Tip Call">Tour Tip Call</a></li>
+			<li><a href="#properties_when_launching_tour_tip_guide" title="Properties when launching Tour Tip Guide">Properties when launching Tour Tip Guide</a></li>
+			<li><a href="#dynamic_tour" title="Dynamic Tour">Dynamic Tour</a></li>
+			<li><a href="#tour_tip_nuke" title="Tour Tip Nuke">Tour Tip Nuke</a></li>
+			<li><a href="#tour_tip_slideshow" title="Tour Tip Slideshow">Tour Tip Slideshow</a></li>
+			<li><a href="#global_properties_on_tour_tip_slideshow" title="Global Properties on Tour Tip Slideshow">Global Properties on Tour Tip Slideshow</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Tour Tip Guide - Responsive, Touch Enabled... is like an APP!!!</h1>
+	    <p>Quick tour guide for you website. jQuery - Plugin
+</p>
+	    <ul class="marketing-byline">
+			<li>created: 03/10/2011</li>
+			<li>latest update: 03/25/2015</li>
+			<li>by: Klerith</li>
+			<li><a href="http://www.codecanyon.net/user/klerith/portfolio?ref=klerith">www.codecanyon.net/user/klerith/portfolio</a></li>
+		</ul>
+	    <p class="download-info">
+			<a href="codecanyon.net/user/klerith/portfolio?ref=klerith" class="btn btn-primary btn-large">Profile - Portfolio</a> 
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<p>
+	Hi, my name is Fernando, and I will help you with this plugin or any other of my plugins, just send me a message using my profile in Codecanyon.</p>
+<p>
+	Contact me if you have issues, suggestions or anything about my plugins.</p>
+<p>
+	&nbsp;</p>
+<p>
+	This are the requirements for this plugin:</p>
+<ol>
+	<li>
+		jQuery
+		<ul>
+			<li>
+				I&#39;m using 1.11.2, but it will work with any other version. If in your project you have a jQuery library, you will not need to import the one inside this package</li>
+		</ul>
+	</li>
+	<li>
+		animate.css
+		<ul>
+			<li>
+				This is the animation css library, you can download the latest version from here (http://daneden.github.io/animate.css/), but you can use the one inside this project.</li>
+		</ul>
+	</li>
+	<li>
+		tourtipguide.js
+		<ul>
+			<li>
+				This file is what I made, this file contains all the functions and stuff that make the magic flow. I recommend you to use the Minified version, because is ligther (66kb) than the normal one</li>
+		</ul>
+	</li>
+	<li>
+		tourtipguide.css
+		<ul>
+			<li>
+				This is the style that makes this plugin look like it looks.</li>
+		</ul>
+	</li>
+	<li>
+		font-awesome.css
+		<ul>
+			<li>
+				Font-Awesome is one of the most used vector icons for a website, I use this library, you can update this file anytime to get the latest features.</li>
+		</ul>
+	</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	Once you have all those files in your page/project, you just need to call the plugin.</p>
+<p>
+	&nbsp;</p>
+<p>
+	I also include tutorials, so after reading this documentation, please check those files to get a better understanding.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Let&#39;s get started!</p>
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	You can set all this files inside the &lt;head&gt; section:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+jQuery library
+&lt;script src=&quot;static/js/jquery-1.11.2.min.js&quot;&gt;&lt;/script&gt;
+
+Animate.css
+&lt;link rel=&quot;stylesheet&quot; href=&quot;static/css/animate.css&quot;&gt;
+
+TourTipGuide.js
+&lt;script src=&quot;static/js/tourtipguide.min.js&quot;&gt;&lt;/script&gt;
+
+TourTipGuide.css
+&lt;link rel=&quot;stylesheet&quot; href=&quot;static/css/tourtipguide.min.css&quot;&gt;
+
+Font-Awesome.css
+&lt;link href=&quot;font-awesome/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Is not required to put all this in the head section, if you want to puck those files in other section, the only condition is that the&nbsp;<span style="line-height: 19px;">tourtipguide.min.js MOST be under jQuery importation.</span></p>
+<h2>
+	Important:</h2>
+<p>
+	Font-Awesome, Animate.css and jQuery included in this package, are not customized at all, you can use the same version that you have in your project.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="main_functions">
+	<div class="page-header"><h3>Main Functions</h3><hr class="notop"></div>
+<p>
+	This plugin has 2 main functions:</p>
+<ol>
+	<li>
+		Create a Tour all over your page ($.ttgTour)</li>
+	<li>
+		Create a Touch enabled slideshow that will be full screen on phones. ($.ttgSlideshow)</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	Those are called in different ways. I will Start with the &quot;Tour&quot; one.</p>
+</section>
+<section id="tour_tip_guide_tour_function">
+	<div class="page-header"><h3>Tour Tip Guide - Tour function</h3><hr class="notop"></div>
+<p>
+	There are two ways to call this Tour, and you can use it both at the same time, or just one of then, it doesn&#39;t matter.</p>
+<ol>
+	<li>
+		HTML make up</li>
+	<li>
+		Javascript call with the elements and settings.</li>
+</ol>
+<p>
+	&nbsp;</p>
+<h2>
+	HTML Make Up</h2>
+<p>
+	1 - Imagine you have an HTML element like a &lt;div&gt;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;&quot;&gt;
+
+&lt;/div&gt; </pre>
+<p>
+	*It can be any HTML element inside &lt;body&gt; Tag</p>
+<p>
+	&nbsp;</p>
+<p>
+	2 -Now, &nbsp;we need to add a CUSTOM CLASS (&quot;tourtipguide&quot;), to tell the code, that you want to set a Tour point in your website like this:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;tourtipguide&quot;&gt;
+
+&lt;/div&gt; </pre>
+<p>
+	*all lower case</p>
+<p>
+	&nbsp;</p>
+<p>
+	3- Add the attributes that you want to show in the notification like this:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;tourtipguide&quot;
+<span style="font-family: Arial, Verdana, sans-serif;">   data-ttg-title=&quot;Your Tittle&quot;
+</span><span style="font-family: Arial, Verdana, sans-serif;">   data-ttg-content=&quot;Description of this step&quot;</span><span style="font-family: Arial, Verdana, sans-serif;">&gt; 
+&lt;/div&gt;</span></pre>
+<p>
+	* there are much more attributes that I will explain in the next page.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="tour_tip_available_attributes">
+	<div class="page-header"><h3>Tour Tip available attributes</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 1000px;">
+	<thead>
+		<tr>
+			<th scope="col">
+				Attribute</th>
+			<th scope="col">
+				Default</th>
+			<th scope="col">
+				Optional</th>
+			<th scope="col">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				data-ttg-animation</td>
+			<td>
+				fadeIn</td>
+			<td>
+				You can speed up all the animations by adding: &quot;animation fast&quot;<br>
+				List of animations here: <a href="http://daneden.github.io/animate.css/">Animate.css</a></td>
+			<td>
+				You can choose any animation that you want</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-position</td>
+			<td>
+				bottom</td>
+			<td>
+				<ul>
+					<li>
+						bottom</li>
+					<li>
+						top</li>
+					<li>
+						left</li>
+					<li>
+						right</li>
+				</ul>
+			</td>
+			<td>
+				Notification position</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-fa</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				Example: &quot;fa-star-o&quot;<br>
+				All the icons are in here: <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font-Awesome Icons</a></td>
+			<td>
+				Pick any icon you want, but remember to add &quot;fa&quot; into the class.. like the example</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-img</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				URL of and image</td>
+			<td>
+				You can use static images by adding the URL of the image in relation to the current page.</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-title</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				Message title</td>
+			<td>
+				(Optional) This is the title of the Tour tip, the color is defined with another attribute</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-content</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				Message content</td>
+			<td>
+				Can be HTML content, this is what appear under the title</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-color</td>
+			<td>
+				#1f7cba</td>
+			<td>
+				Any HTML color</td>
+			<td>
+				This attribute, chage the color of buttons, title, step indicator and pointer</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-idx</td>
+			<td>
+				100000</td>
+			<td>
+				1,2,3,4</td>
+			<td>
+				Use this property, to set the order of the Tour, if you set another element with the same idx, it will use the default one</td>
+		</tr>
+		<tr>
+			<td>
+				data-ttg-arrow</td>
+			<td>
+				true</td>
+			<td>
+				false,true</td>
+			<td>
+				This tells me if you want to show the directional arrow or not.</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p>
+	There are global properties, that I will explain the next step</p>
+</section>
+<section id="tour_tip_call">
+	<div class="page-header"><h3>Tour Tip Call</h3><hr class="notop"></div>
+<p>
+	Once you have all the attributes on your elements, you can call the plugin with the default parameters using this function:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$.ttgTour();</pre>
+<p>
+	* That&#39;s all</p>
+<p>
+	&nbsp;</p>
+<p>
+	Please check the Tutorials for a full form load example.</p>
+<p>
+	&nbsp;</p>
+<p>
+	This is what you need to add to launch on form load</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(document).ready(function($) {
+
+    $.ttgTour();
+
+});</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Also, there are some tweaks that you can easily change like:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$(document).ready(function($) {
+
+    $.ttgTour({
+       <span style="font-family: Arial, Verdana, sans-serif;">next: &quot;Next&quot;,
+</span><span style="font-family: Arial, Verdana, sans-serif;">               prev: &quot;Prev&quot;,
+</span><span style="font-family: Arial, Verdana, sans-serif;">               finish: &quot;Tour End&quot; 
+</span><span style="font-family: Arial, Verdana, sans-serif;">      });
+
+ });</span></pre>
+<p>
+	* That call, will change the labels on all the buttons, there are a couple of properties that you can change using this call</p>
+</section>
+<section id="properties_when_launching_tour_tip_guide">
+	<div class="page-header"><h3>Properties when launching Tour Tip Guide</h3><hr class="notop"></div>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 1000px;">
+	<thead>
+		<tr>
+			<th scope="col">
+				Property</th>
+			<th scope="col">
+				Default</th>
+			<th scope="col">
+				Optional</th>
+			<th scope="col">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				position:</td>
+			<td>
+				&quot;bottom&quot;</td>
+			<td>
+				&quot;top&quot;, &quot;bottom&quot;, &quot;right&quot;,&quot;left&quot;</td>
+			<td>
+				Change the position of the default Tour Tip.</td>
+		</tr>
+		<tr>
+			<td>
+				color:</td>
+			<td>
+				&quot;#1f7cba&quot;</td>
+			<td>
+				Any HTML color</td>
+			<td>
+				Change the default color of the guides</td>
+		</tr>
+		<tr>
+			<td>
+				next:</td>
+			<td>
+				&quot;Next&quot;</td>
+			<td>
+				&quot;Continue&quot;</td>
+			<td>
+				Change the label of the &quot;Next&quot; button</td>
+		</tr>
+		<tr>
+			<td>
+				prev:</td>
+			<td>
+				&quot;Prev&quot;</td>
+			<td>
+				&quot;Back&quot;</td>
+			<td>
+				Change the label of the &quot;Previous&quot; button</td>
+		</tr>
+		<tr>
+			<td>
+				finish:</td>
+			<td>
+				&quot;Tour End&quot;</td>
+			<td>
+				&quot;Finish&quot;</td>
+			<td>
+				Change the label of the last step button</td>
+		</tr>
+		<tr>
+			<td>
+				animation:</td>
+			<td>
+				&quot;fadeIn&quot;</td>
+			<td>
+				You can speed up all the animations by adding: &quot;animation fast&quot; List of animations here: <a href="http://daneden.github.io/animate.css/">Animate.css</a></td>
+			<td>
+				Any animation inside that file</td>
+		</tr>
+		<tr>
+			<td>
+				closeicon:</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Show or hide the close icon button</td>
+		</tr>
+		<tr>
+			<td>
+				arrow:</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				Show or hide all the arrows</td>
+		</tr>
+		<tr>
+			<td>
+				opacity:</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				If you want to disabled or enabled the fade background</td>
+		</tr>
+		<tr>
+			<td>
+				scrollspeed:</td>
+			<td>
+				200</td>
+			<td>
+				700</td>
+			<td>
+				Scroll speed, lower = faster, 0 = instant</td>
+		</tr>
+		<tr>
+			<td>
+				elements:</td>
+			<td>
+				[ ]</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				This is an array of Tip Guides, this is used to create Tip Guides Dynamically without the Attributes in the HTML page</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+</section>
+<section id="dynamic_tour">
+	<div class="page-header"><h3>Dynamic Tour</h3><hr class="notop"></div>
+<p>
+	If you don&#39;t want to mess around the HTML, or you need to add dynamic guides, all you need to do is this call:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$.ttgTour({
+      elements:[
+                   {
+                        id: &quot;txtSearch&quot;,
+                        title: &quot;Search here&quot;,
+                        position: &quot;left&quot;,
+                        color: &quot;#5CB85C&quot;,
+                        img: &quot;../static/img/search.png&quot;,
+                        content: &quot;You can search whatever you want in here&quot;
+                    }
+                ]
+            });</pre>
+<p>
+	&nbsp;</p>
+<p>
+	As you can see, elements is an array that can dynamically add or configure all the Tour Tip Guides.</p>
+<p>
+	The properties are the same:</p>
+<ol>
+	<li>
+		animation</li>
+	<li>
+		position</li>
+	<li>
+		fa</li>
+	<li>
+		img</li>
+	<li>
+		title</li>
+	<li>
+		content</li>
+	<li>
+		color</li>
+	<li>
+		idx</li>
+	<li>
+		arrow</li>
+	<li>
+		id</li>
+</ol>
+<h2>
+	Important</h2>
+<p>
+	&quot;id&quot; property is required, if you don&#39;t set the UNIQUE ID of the element that you want to attach a Tip Guide, it will be ommited.</p>
+<p>
+	&nbsp;</p>
+<p>
+	For more information about Tour Tip Guide, please check the Tutorial Folder</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="tour_tip_nuke">
+	<div class="page-header"><h3>Tour Tip Nuke</h3><hr class="notop"></div>
+<p>
+	If you want to destroy all the instances at one, maybe when a user clicks on something and you want to stop the plugin, just call this function:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$.ttgTourNuke();</pre>
+<p>
+	&nbsp;</p>
+<p>
+	And it will stop and everything will return to normal.</p>
+</section>
+<section id="tour_tip_slideshow">
+	<div class="page-header"><h3>Tour Tip Slideshow</h3><hr class="notop"></div>
+<p>
+	This plugin, create a slideshow that can be controlled by dragin the slide or by clicking the small dots, if you are on a touch enabled device, it can be moved using your fingers.</p>
+<p>
+	&nbsp;</p>
+<p>
+	On phones, it will be FULL SCREEN automatically.</p>
+<pre class="prettyprint lang-js linenums">
+
+
+$.ttgSlideshow({
+               elements:[{
+                            img: &#39;../static/img/comments.jpg&#39;,
+                            imgclass:&#39;demoImg1&#39;,
+                            content: &#39;In this section, you can keep track of your messages!&#39;
+                        },
+                        {
+                            img: &#39;../static/img/touch.png&#39;,
+                            imgclass:&#39;demoImg2&#39;,
+                            content: &#39;Touch enabled! &lt;br/&gt;&lt;br/&gt; Please, put your phone in landscape mode &lt;strong class=&quot;purp&quot;&gt;NOW!&lt;/strong&gt;&#39;
+                        },
+                        {
+                            fa: &#39;fa-star-o fa-3x&#39;,
+                            iconcolor: &quot;#1f7cba&quot;,
+                            content: &#39;Font-Awesome is supported&lt;br/&gt;easy to use and all features enabled!&#39;
+                        }]
+            });</pre>
+<p>
+	This is the slideshow that I use on the demo page.</p>
+<p>
+	&nbsp;</p>
+<p>
+	There are global properties in here too</p>
+</section>
+<section id="global_properties_on_tour_tip_slideshow">
+	<div class="page-header"><h3>Global Properties on Tour Tip Slideshow</h3><hr class="notop"></div>
+<p>
+	Properties on the Slideshow call</p>
+<ol>
+	<li>
+		color: &quot;#1f7cba&quot; - set the default color of the last button and small dots</li>
+	<li>
+		animation: &quot;fadeIn&quot; - Any animation on animation.css</li>
+	<li>
+		closebutton: &quot;Close this tour&quot; -- Last button label</li>
+	<li>
+		elements:[ ]</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	The properties that can be use in the Element array:</p>
+<p>
+	&nbsp;</p>
+<ol>
+	<li>
+		imgclass = you can send a custom class for the image</li>
+	<li>
+		img =&nbsp;image URL that you want to display</li>
+	<li>
+		fa = font awesome icon</li>
+	<li>
+		iconcolor = HTML color</li>
+	<li>
+		content = body of the slideshow</li>
+</ol>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Klerith 2015 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>

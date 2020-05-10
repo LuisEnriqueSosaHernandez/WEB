@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jQuery Import -->
+	<script src="static/js/jquery-1.11.2.min.js"></script>
+	
+	<!-- Font-Awesome -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Animate css -->
+	<link rel="stylesheet" href="static/css/animate.css">
+
+
+	<!-- Tool Tip Guide! -->
+    <script src="static/js/tourtipguide.min.js"></script>
+    <link rel="stylesheet" href="static/css/tourtipguide.min.css">
+
+
+    <!-- Bostrap - NOT REQUIRED just for the demo -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+	<style>
+		.row{
+			margin-bottom: 300px;
+		}
+	</style>
+
+	<title>Tour Tip Guide</title>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Your awesome page</h1>
+	
+
+		<div class="row" align="center">
+		
+		    	<!-- Important: if you are creating the element dynamically
+		    	     you don't need the tourtipguide class -->
+				<button class="btn btn-primary" id="butLaunch1">
+	   						CLICK ME!!! I call the plugin
+		   		</button>
+		    
+		</div>
+
+		
+
+
+		<div class="row" align="center">
+		    
+				<button class="btn btn-info" id="butLaunch2">
+	   						I don't do anything
+		   		</button>
+
+		</div>
+
+		
+
+	</div>
+	
+
+	<script>
+
+		$("#butLaunch1").on("click",function(){
+			$.ttgTour({
+				elements:[{
+					id:      "butLaunch1",
+					title:   "My title",
+					content: "Some random content.",
+					img:     "static/img/right_click.png"
+				},
+				{
+					id:      "butLaunch2",
+					title:   "Some other title",
+					color:   "#5DB4D8",
+					content: "Some other random content.",
+					img:     "static/img/right_click.png"
+				}]
+			});
+		});
+
+	</script>
+
+
+</body>
+</html>

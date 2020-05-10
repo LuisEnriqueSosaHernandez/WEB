@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metro Modal</title>
+	<!-- For responsive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- For responsive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Metro Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/metromodal.min.css">
+
+	<!-- Metro Modal JS -->
+	<script src="static/js/metromodal.min.js"></script>
+
+	<!-- Google Maps Api (needed if you are using some Google Maps functionality -->
+	<!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+
+</head>
+<body>
+
+
+<h1>Tutorial #5</h1>
+<h2>Create a modal after form loads and use special backgrounds</h2>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+	$.MetroModal({
+			html: '<br/>This is a Happy Metro Modal',
+			backscreencolor: "#8d4f8e",
+			width: "400px",
+			height: "150px",
+			backscreenopacity: 1,
+			colortimer: 1500,
+			colors: ["#8dc63f","#0072bc","#662d91","#ec008c","#0d004c"]
+		});
+
+});
+
+
+</script>
+
+
+</body>
+</html>

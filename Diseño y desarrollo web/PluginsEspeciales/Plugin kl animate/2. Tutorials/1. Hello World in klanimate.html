@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+		
+	
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+	
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				width: 100%;
+			}
+
+			h1{
+				margin-bottom: 1000px;
+				display: block;
+			}
+	
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<h1 class="klanimate">Hello World! <small>scroll down</small></h1>
+
+			<h1 class="klanimate">Hi! <small>keep scrolling</small></h1>
+
+			<h1 class="klanimate">This is the end!</h1>
+
+			<span class="klanimate">boo!</span>
+
+		</div>
+
+
+
+
+		
+		<script>
+			$.klAnimate();
+		</script>
+
+
+	</body>
+</html>

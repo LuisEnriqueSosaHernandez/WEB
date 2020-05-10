@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jQuery Import -->
+	<script src="static/js/jquery-1.11.2.min.js"></script>
+	
+	<!-- Font-Awesome -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Animate css -->
+	<link rel="stylesheet" href="static/css/animate.css">
+
+
+	<!-- Tool Tip Guide! -->
+    <script src="static/js/tourtipguide.js"></script>
+    <link rel="stylesheet" href="static/css/tourtipguide.min.css">
+
+
+    <!-- Bostrap - NOT REQUIRED just for the demo -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+	<style>
+		.demoImg1{
+			width: 300px;
+		}
+		.demoImg2{
+			width: 50px;
+		}
+	</style>
+
+	<title>Tour Tip Slideshow</title>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Your awesome page</h1>
+		<p>
+			Form load launch
+		</p>
+		
+
+	</div>
+	
+
+	<script>
+
+		$(document).ready(function($) {
+
+			$.ttgSlideshow({
+				color: "#540DA9",
+				animation: "bounceIn",
+				closebutton: "I understand all!",
+                elements:[{
+                        img: 'static/img/comments.jpg',
+                        imgclass:'demoImg1', // I create custom class for a better style
+                        content: 'In this section, you can keep track of your messages!'
+                    },
+                    {
+                        img: 'static/img/touch.png',
+                        imgclass:'demoImg2', // I create custom class for a better style
+                        content: 'Touch enabled! <br/><br/> Please, put your phone in landscape mode <strong class="purp">NOW!</strong>'
+                    },
+                    {
+                        fa: 'fa-star-o fa-3x',
+                        iconcolor: "#1f7cba",
+                        content: 'Font-Awesome is supported<br/>easy to use and all features enabled!'
+                    }]
+       		 });	
+		});
+
+	</script>
+
+
+</body>
+</html>

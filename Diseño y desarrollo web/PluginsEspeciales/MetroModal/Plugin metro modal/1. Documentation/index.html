@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Metro Modal - Turn "Divs" into Metro Modals or use jQuery</title>
+ 	<meta name="description" content="">
+	<meta name="author" content="Klerith">
+	<meta name="copyright" content="Klerith">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-09-07T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+	
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url(assets/images/image_1.png);}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	
+	
+    </head>
+    
+<body class="documenter-project-metro-modal" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="#">Metro Modal - Turn "Divs" into Metro Modals or use jQuery</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#introduction" title="Introduction">Introduction</a></li>
+			<li><a href="#version_2_update" title="Version 2 - Update">Version 2 - Update</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#how_to_use_it_1_create_a_new_one_from_jquery" title="How to use it #1 (Create a new one from jQuery)">How to use it #1 (Create a new one from jQuery)</a></li>
+			<li><a href="#how_to_use_it_2_convert_a_div_into_a_metro_modal" title="How to use it #2 (Convert a Div into a Metro Modal)">How to use it #2 (Convert a Div into a Metro Modal)</a></li>
+			<li><a href="#who_to_use_it_3_close_all_via_javascript" title="Who to Use it #3 Close All via Javascript">Who to Use it #3 Close All via Javascript</a></li>
+			<li><a href="#properties" title="Properties">Properties</a></li>
+			<li><a href="#animations" title="Animations">Animations</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Metro Modal - Turn "Divs" into Metro Modals or use jQuery</h1>
+	    <p></p>
+	    <ul class="marketing-byline">
+			<li>created: 03/10/2011</li>
+			<li>latest update: 09/07/2014</li>
+			<li>by: Klerith</li>
+			<li><a href="http://codecanyon.net/user/klerith">codecanyon.net/user/klerith</a></li>
+		</ul>
+	    <p class="download-info">
+			<a href="http://codecanyon.net/user/klerith/portfolio" class="btn btn-primary btn-large">My Portfolio</a> 
+		</p>
+		
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for buying/testing Metro Modal</p>
+   </div> <!-- intro -->
+   
+	</div>
+      
+  <section id="introduction">
+	<div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+<p>
+	This is a jQuery plugin that generates Modal PopUps on your website.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Can convert DIVs, into Metro Modals that are configurable to achieve the style that you are looking for.</p>
+<p>
+	&nbsp;</p>
+<p>
+	After reading this documentation, open the &quot;Tutorials&quot; folder to check it out a couple of interesting things that will help you tu fully understand this code.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Any help, please contact me here:</p>
+<p>
+	<a href="http://codecanyon.net/user/klerith">http://codecanyon.net/user/klerith</a></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="version_2_update">
+	<div class="page-header"><h3>Version 2 - Update</h3><hr class="notop"></div>
+<p>
+	If you are planning to update from Version 1 to version 2 or newers. PLEASE READ THIS.</p>
+<p>
+	&nbsp;</p>
+<p>
+	I made huge changes in the JS structure and CSS. There are New properties, new tutorias, new documentation.</p>
+<p>
+	&nbsp;</p>
+<p>
+	I did this, because I understand better ways to achive what I was looking for. The code now is faster, better and much lightner.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Change Log:</p>
+<p>
+	V.2</p>
+<ul>
+	<li>
+		I remove the dependency from jQuery UI (Drag is not avalaible, but we have super light js)</li>
+	<li>
+		Refactor all the CSS and JS</li>
+	<li>
+		New Function to close all Modals</li>
+	<li>
+		Huge improvements on div converter into modal, READ AND CHECK the tutorials please. I change a couple of things. Now is simplier, but different</li>
+	<li>
+		New properties added
+		<ul>
+			<li>
+				position</li>
+			<li>
+				top, left, right, bottom</li>
+			<li>
+				backshadow</li>
+			<li>
+				<div>
+					iframecache</div>
+			</li>
+			<li>
+				<div>
+					loadingtext</div>
+			</li>
+			<li>
+				<div>
+					youtube</div>
+			</li>
+			<li>
+				<div>
+					youtubecontrols</div>
+			</li>
+			<li>
+				<div>
+					youtubeinfo</div>
+			</li>
+			<li>
+				<div>
+					vimeo</div>
+			</li>
+			<li>
+				<div>
+					googlelatitud</div>
+			</li>
+			<li>
+				<div>
+					googlelongitud</div>
+			</li>
+			<li>
+				<div>
+					googlezoom</div>
+			</li>
+			<li>
+				<div>
+					googlemaptypeid</div>
+			</li>
+			<li>
+				<div>
+					mobilehidebuttons</div>
+			</li>
+			<li>
+				<div>
+					uniqueclasstomodal</div>
+			</li>
+			<li>
+				<div>
+					colorchangespeed</div>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Integration with Google Maps Api (Optional)</li>
+	<li>
+		Vimeo Support</li>
+	<li>
+		New Youtube Features</li>
+	<li>
+		New Style</li>
+	<li>
+		Metro Modal can appear anywhere on the screen.</li>
+	<li>
+		New functionallity when the user Closes, Maximize or Minimize the Metro Modal</li>
+	<li>
+		Click outside on touch enabled devices can&#39;t be better</li>
+	<li>
+		Updates on the Changing color functions.</li>
+	<li>
+		New animations on resize window.</li>
+</ul>
+<div>
+	&nbsp;</div>
+<div>
+	<div>
+		&nbsp;</div>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	Copy the &quot;Static&quot;&nbsp; forder into your project.</p>
+<p>
+	&nbsp;</p>
+<p>
+	In the &lt;HEAD&gt; section of the page that you are going to use, add the following:</p>
+<p>
+	&nbsp;</p>
+<p>
+	The jQuery Library:</p>
+<p>
+	You can use your own version of jQuery from 1.7 or newer.</p>
+<pre class="prettyprint lang-js linenums">
+    &lt;script src=&quot;static/js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	The MetroModal Style in the &lt;head&gt; section</p>
+<pre class="prettyprint lang-js linenums">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/css/metromodal.min.css&quot;&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	The MetroModal.js after jQuery</p>
+<pre class="prettyprint lang-js linenums">
+    &lt;script src=&quot;static/js/metromodal.min.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	If you have plans to use Google Maps Api, add this. &nbsp;(Not required if you are not going to use any of the google maps properties)</p>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.googleapis.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	And that&#39;s all.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="how_to_use_it_1_create_a_new_one_from_jquery">
+	<div class="page-header"><h3>How to use it #1 (Create a new one from jQuery)</h3><hr class="notop"></div>
+<p>
+	This part of the documentation, it is only for illustration purposes, I recommend you to open the tutorial folder and watch every one to a better understanding.</p>
+<p>
+	&nbsp;</p>
+<p>
+	To create a new one from a jQuery function, you need to:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$.MetroModal({
+
+        html: &#39;This is a Happy Metro Modal&#39;,
+        controls: true,
+
+});</pre>
+<div>
+	&nbsp;</div>
+<div>
+	This creates a metro modal with &quot;This is a Happy Metro Modal&quot; text inside, and the buttons un the upper left corner.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="how_to_use_it_2_convert_a_div_into_a_metro_modal">
+	<div class="page-header"><h3>How to use it #2 (Convert a Div into a Metro Modal)</h3><hr class="notop"></div>
+<p>
+	This will help you to understand how to convert a DIV into a metro modal.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Let&#39;s take this div for example:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;MetroDiv1 metromodaldiv&quot;&gt;
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.<span class="Apple-tab-span" style="white-space:pre"> </span>
+
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	You need to set it like that... NO ID tag, and UNIQUE CSS class and add &nbsp;&quot;<span style="line-height: 19px;">metromodaldiv&quot; class.</span></p>
+<p>
+	&nbsp;</p>
+<p>
+	To convert it to a Modal:</p>
+<pre class="prettyprint lang-js linenums">
+$(&quot;.MetroDiv1&quot;).MetroModal({
+
+         backscreenopacity:1,
+         backscreencolor: &quot;#9603a3&quot;,
+         width:&quot;260px&quot;,
+         height: &quot;130px&quot;,
+
+});</pre>
+<div>
+	&nbsp;</div>
+<div>
+	In this Example, the I&#39;m picking the DIV with the class &quot;MetroDiv1&quot;, and call the MetroModal function. Also, I&#39;m giving aditional parameters.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	But once again, this is just for illustrative purposes, I recommend you to open the tutorial folder and check it out there.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="who_to_use_it_3_close_all_via_javascript">
+	<div class="page-header"><h3>Who to Use it #3 Close All via Javascript</h3><hr class="notop"></div>
+<p>
+	You can close all the Metro Modals just by calling this function:</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+$.MetroModalCloseAll();</pre>
+<p>
+	&nbsp;</p>
+<p>
+	That will close all the modals and fire the Callback if they have one.</p>
+</section>
+<section id="properties">
+	<div class="page-header"><h3>Properties</h3><hr class="notop"></div>
+<p>
+	There are two ways to use this.</p>
+<ul>
+	<li>
+		Create a new Modal from nothing</li>
+	<li>
+		Convert a Div into a modal.</li>
+</ul>
+<p>
+	Both, uses the same properties. So I&#39;m going to talk about all of those. If you want to use the default value, you don&#39;t need to pass that property.</p>
+<p>
+	&nbsp;</p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 800px;">
+	<thead>
+		<tr>
+			<th scope="col">
+				Property</th>
+			<th scope="col">
+				Default</th>
+			<th scope="col">
+				Alternative</th>
+			<th scope="col">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				html</td>
+			<td>
+				undefined</td>
+			<td>
+				Any kind of plain text or HTML content</td>
+			<td>
+				Specify the HTML you want inside the modal. (This option is not available if you are converting a div)</td>
+		</tr>
+		<tr>
+			<td>
+				title</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;This is my Title&quot;, &quot;&lt;span class=&#39;AnyClass&#39;&gt;Title&lt;/span&gt;&quot;</td>
+			<td>
+				Metro Modal&#39;s Title.&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				width</td>
+			<td>
+				&quot;300px&quot;</td>
+			<td>
+				&quot;350px&quot;, &quot;45%&quot;, &quot;500px&quot;</td>
+			<td>
+				Modal width, can be in &quot;px&quot; or &quot;%&quot;, both of them, will be automatically adapt when the screen is not enough to display it on the users screen.</td>
+		</tr>
+		<tr>
+			<td>
+				height</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;400px&quot;,&quot;100%&quot;</td>
+			<td>
+				<p>
+					Modal height, can be in &quot;px&quot; or &quot;%&quot;, both of them, will be automatically adapt when the screen is not enough to display it on the users screen.</p>
+				<p>
+					&nbsp;</p>
+				<p>
+					if you don&#39;t pass any value, it will addapt to the content.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				position</td>
+			<td>
+				&quot;center&quot;</td>
+			<td>
+				&quot;fixed&quot;</td>
+			<td>
+				<p>
+					&quot;center&quot; = Will place the Metro Modal on the center of the screen</p>
+				<p>
+					&quot;fixed&quot; = Place the modal on specifict location. Using top, left, right or bottom properties</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				top</td>
+			<td>
+				&quot;10px&quot;</td>
+			<td>
+				&quot;50px&quot;, &quot;50%&quot;</td>
+			<td>
+				<p>
+					Using position fixed, this is the distance that you want from the Top.&nbsp;</p>
+				<p>
+					Bottom property will be omitted if Top property is set</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				left</td>
+			<td>
+				&quot;10px&quot;</td>
+			<td>
+				&quot;50px&quot;, &quot;50%&quot;</td>
+			<td>
+				<p>
+					Using position fixed, this is the distance from the left side of the screen</p>
+				<p>
+					&nbsp;</p>
+				<p>
+					Right property will be omitted</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				bottom</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;10px&quot;,&quot;50%&quot;</td>
+			<td>
+				<p>
+					Using position fixed, Distance from the bottom.</p>
+				<p>
+					Top property must be undefined.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				right</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;10px&quot;,&quot;50%&quot;</td>
+			<td>
+				<p>
+					Using position fixed, distance from the right</p>
+				<p>
+					Left property must be undefined</p>
+				<p>
+					&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				contentcolor</td>
+			<td>
+				&quot;#000000&quot;</td>
+			<td>
+				Any HTML color</td>
+			<td>
+				Change the color of the MetroModal content, also change the color of the controls (X - O)</td>
+		</tr>
+		<tr>
+			<td>
+				backcolor</td>
+			<td>
+				&quot;#ffffff&quot;</td>
+			<td>
+				Any HTML color</td>
+			<td>
+				Change the color of the Main Metro Modal Window.</td>
+		</tr>
+		<tr>
+			<td>
+				backshadow</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				If you want to show or hide the shadow of the Metro Modal</td>
+		</tr>
+		<tr>
+			<td>
+				backscreen</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				If you want to block the Window when Metro Modal is Present</td>
+		</tr>
+		<tr>
+			<td>
+				backscreencolor</td>
+			<td>
+				&quot;#000000&quot;</td>
+			<td>
+				Any HTML color</td>
+			<td>
+				Change the color of the Backscreen</td>
+		</tr>
+		<tr>
+			<td>
+				backscreenopacity</td>
+			<td>
+				0.4</td>
+			<td>
+				0.1, 0.2... to 1</td>
+			<td>
+				<p>
+					1 = No transparency at all</p>
+				<p>
+					0.1 = Almost invisible</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				controls</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				If you want to show the X - O buttons.</td>
+		</tr>
+		<tr>
+			<td>
+				clickoutside</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				This control the closing behavior. If the user clicks or touch outside of the Metro Modal, this will be close.</td>
+		</tr>
+		<tr>
+			<td>
+				iframe</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;http://m.wikipedia.org&quot;, &quot;/relative/path&quot;</td>
+			<td>
+				Setting this property will ignore the HTML property and show the iframe inside</td>
+		</tr>
+		<tr>
+			<td>
+				iframecache</td>
+			<td>
+				true</td>
+			<td>
+				false</td>
+			<td>
+				This create a loading message until the iframe is fully loaded in the background.</td>
+		</tr>
+		<tr>
+			<td>
+				loadingtext</td>
+			<td>
+				&quot;Loading&quot;</td>
+			<td>
+				&quot;Please wait&quot;, &quot;Hold on&quot;</td>
+			<td>
+				This is the text that appear when is caching the iFrame</td>
+		</tr>
+		<tr>
+			<td>
+				youtube</td>
+			<td>
+				undefined</td>
+			<td>
+				Any YouTube ID example &quot;QgACcUDttQ0&quot;</td>
+			<td>
+				This creates an iFrame with the video from YouTube</td>
+		</tr>
+		<tr>
+			<td>
+				youtubecontrols</td>
+			<td>
+				false</td>
+			<td>
+				true</td>
+			<td>
+				If you want to show the Play, Pause buttons from YouTube video</td>
+		</tr>
+		<tr>
+			<td>
+				youtubeinfo</td>
+			<td>
+				false</td>
+			<td>
+				true</td>
+			<td>
+				Show or Hide the information about the video</td>
+		</tr>
+		<tr>
+			<td>
+				vimeo</td>
+			<td>
+				undefined</td>
+			<td>
+				Any Vimeo Video ID example &quot;104877719&quot;</td>
+			<td>
+				Vimeo video ID.</td>
+		</tr>
+		<tr>
+			<td>
+				googlelatitud</td>
+			<td>
+				undefined</td>
+			<td>
+				40.726393</td>
+			<td>
+				Google Maps Latitud (requires both googlelatitud and googlelongitud property to work)</td>
+		</tr>
+		<tr>
+			<td>
+				googlelongitud</td>
+			<td>
+				undefined</td>
+			<td>
+				-74.010505</td>
+			<td>
+				Google Maps Longitud (requires both googlelatitud and googlelongitud property to work)</td>
+		</tr>
+		<tr>
+			<td>
+				googlezoom</td>
+			<td>
+				17</td>
+			<td>
+				Any zoom level from 1 to 18</td>
+			<td>
+				Google Maps zoom level</td>
+		</tr>
+		<tr>
+			<td>
+				googlemaptypeid</td>
+			<td>
+				&quot;roadmap&quot;</td>
+			<td>
+				<div>
+					&quot;ROADMAP&quot;</div>
+				<div>
+					&quot;SATELLITE&quot;</div>
+				<div>
+					&quot;HYBRID&quot;</div>
+				<div>
+					&quot;TERRAIN&quot;</div>
+			</td>
+			<td>
+				Witch kind of Google Map do you want.</td>
+		</tr>
+		<tr>
+			<td>
+				timeout</td>
+			<td>
+				undefined</td>
+			<td>
+				<p>
+					1000 = 1 second</p>
+				<p>
+					2000 = 2 seconds</p>
+			</td>
+			<td>
+				<p>
+					This property will fire the callback and will close the Metro Modal</p>
+				<p>
+					If the timeout reach the limit and the pointer is over the Metro Modal, it will wait until &nbsp;the mouse leave to close it.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				animation</td>
+			<td>
+				&quot;fadeIn fast&quot;</td>
+			<td>
+				Check the following section to see all the 23 animations avalaible</td>
+			<td>
+				CSS3 In animation, if you add &quot;fast&quot; the animation will be 0.4 long</td>
+		</tr>
+		<tr>
+			<td>
+				mobilehidebuttons</td>
+			<td>
+				false</td>
+			<td>
+				true</td>
+			<td>
+				This will force to hide the Control Buttons on mobile devices</td>
+		</tr>
+		<tr>
+			<td>
+				uniqueclasstomodal</td>
+			<td>
+				undefined</td>
+			<td>
+				&quot;AnyClass&quot;</td>
+			<td>
+				Pass a unique class of any Div to convert it into a Metro Modal. (there are 2 ways of call it. This is the first one)</td>
+		</tr>
+		<tr>
+			<td>
+				colors</td>
+			<td>
+				undefined</td>
+			<td>
+				colors: [&quot;#ff00e3&quot;,&quot;#6704ca&quot;]</td>
+			<td>
+				This an array of colors, You have no limit at all</td>
+		</tr>
+		<tr>
+			<td>
+				colortimer</td>
+			<td>
+				1500</td>
+			<td>
+				2000 = 2 seconds</td>
+			<td>
+				Begin the change every 1.5 seconds</td>
+		</tr>
+		<tr>
+			<td>
+				colorchangespeed</td>
+			<td>
+				1000</td>
+			<td>
+				1000= 1 second</td>
+			<td>
+				Color will be fully change in 1 second</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="animations">
+	<div class="page-header"><h3>Animations</h3><hr class="notop"></div>
+<ol>
+	<li>
+		shake</li>
+	<li>
+		bounce</li>
+	<li>
+		tada</li>
+	<li>
+		swing</li>
+	<li>
+		wobble</li>
+	<li>
+		pulse</li>
+	<li>
+		fadeIn</li>
+	<li>
+		fadeInUp</li>
+	<li>
+		fadeInDown</li>
+	<li>
+		fadeInLeft</li>
+	<li>
+		fadeInRight</li>
+	<li>
+		fadeInUpBig</li>
+	<li>
+		fadeInDownBig</li>
+	<li>
+		fadeInLeftBig</li>
+	<li>
+		fadeInRightBig</li>
+	<li>
+		bounceIn</li>
+	<li>
+		bounceInUp</li>
+	<li>
+		bounceInDown</li>
+	<li>
+		bounceInLeft</li>
+	<li>
+		rotateInUpLeft</li>
+	<li>
+		rotateInDownLeft</li>
+	<li>
+		rotateInUpRight</li>
+	<li>
+		rotateInDownRight</li>
+</ol>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Klerith 2014 made with the <a href="http://rxa.li/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metro Modal</title>
+	<!-- For responsive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- For responsive pages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- jQuery needed to run the puglin (needed) -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Metro Modal CSS -->
+	<link rel="stylesheet" type="text/css" href="static/css/metromodal.min.css">
+
+	<!-- Metro Modal JS -->
+	<script src="static/js/metromodal.min.js"></script>
+
+	<!-- Google Maps Api (needed if you are using some Google Maps functionality -->
+	<!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+
+	<style type="text/css">
+
+		.SomeCustomClass{
+			padding: 5px;
+			color: white;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+
+<h1>Tutorial #3</h1>
+<h2>Convert a Hidden DIV into a modal</h2>
+
+<button id="botPress">Click Me</button>
+
+
+<div class="MetroDiv1 metromodaldiv">
+
+	<div class="SomeCustomClass">
+		<h1>Hello</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#botPress").on("click",function(){
+
+
+	$(".MetroDiv1").MetroModal({
+			backscreencolor: "#a310b0",
+			backcolor: "#a310b0",
+			width: "250px",
+			controls: false,
+			height: "200px",
+			backscreen: true,
+			backscreenopacity: 0.3,
+			animation: "bounceInLeft"
+		});
+
+});
+
+
+</script>
+
+
+</body>
+</html>

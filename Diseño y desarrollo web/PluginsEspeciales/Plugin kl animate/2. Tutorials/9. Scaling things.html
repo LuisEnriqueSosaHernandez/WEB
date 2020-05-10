@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+				
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+	
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+		
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				padding: 20px;
+				width: 100%;
+			}
+			h1{
+				margin-bottom: 100px;
+			}
+
+			img{
+				margin-bottom: 10px;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<h1>data-scale and infinite loop</h1>
+			
+			<h2>Scaling and repeating</h2>
+			<img src="img/square.png" class="klanimate" data-scale="1.2" data-repeat="-1">
+			
+			
+
+
+		</div>
+
+
+
+
+		
+		<script>
+			$.klAnimate();
+		</script>
+
+
+	</body>
+</html>

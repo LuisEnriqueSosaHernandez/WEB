@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+		
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+	
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+		
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				padding: 20px;
+				width: 100%;
+			}
+
+			img{
+				margin-bottom: 100px;
+				margin-top: 100px;
+				display: block;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<h1>Changing the default behavior</h1>
+			
+			<img src="img/square.png" class="klanimate">
+			
+			<img src="img/square.png" class="klanimate">
+
+			<img src="img/square.png" class="klanimate">
+
+			<img src="img/square.png" class="klanimate">
+
+			<img src="img/square.png" class="klanimate">
+
+			<img src="img/square.png" class="klanimate">
+
+
+		</div>
+
+
+
+
+		
+		<script>
+			// by changin some properties here, you can modify the default behavior of 
+			// all the animations
+			$.klAnimate({
+				animation: "back",
+				delay    : 0,
+				rotation : 3,
+				visible  : 0,
+				scale    : 1.3,
+				duration : 1.5,
+				x : 100,
+				y : 100,
+				repeat: -1
+			});
+		</script>
+
+
+	</body>
+</html>

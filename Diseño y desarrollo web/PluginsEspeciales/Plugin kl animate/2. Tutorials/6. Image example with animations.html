@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+		
+		
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+	
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+		
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				padding: 20px;
+				width: 100%;
+			}
+			h1{
+				margin-bottom: 100px;
+			}
+
+			.circle{
+				position: relative;
+				z-index: 2;
+			}
+
+			.triangle{
+				position: relative;
+				left: -75px;
+				top: 10px;
+				z-index: 1;
+			}
+
+			.square{
+				position: relative;
+				left: -175px;
+				top: -10px;
+				z-index: 0;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<h1>Some animations</h1>
+
+			<img src="img/circle.png" class="circle klanimate" data-x="-150" data-animation="bounce">
+
+			<img src="img/triangle.png" class="triangle klanimate" data-y="-150" data-delay="1" data-animation="bounce">
+
+			<img src="img/square.png" class="square klanimate" data-x="150" data-delay="2" data-animation="bounce">
+
+
+		</div>
+
+
+
+
+		
+		<script>
+			$.klAnimate();
+		</script>
+
+
+	</body>
+</html>

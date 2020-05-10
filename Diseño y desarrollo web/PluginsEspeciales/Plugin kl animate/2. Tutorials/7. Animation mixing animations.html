@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+		
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+	
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+		
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				padding: 20px;
+				width: 100%;
+			}
+			h1{
+				margin-bottom: 100px;
+			}
+
+			.triangle{
+				position: relative;
+				left: -75px;
+				top: 10px;
+				z-index: 1;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<h1>Some animations</h1>
+			<p>
+				You can animate objects, and animate childs inside the parent like this
+			</p>
+			
+			<div class="klanimate" data-x="150">
+				
+				<img src="img/triangle.png" class="triangle klanimate" data-visible="1" data-x="-100" data-rotation="90">
+				
+				<br>
+				<br>
+				<p class="klanimate" data-delay="1.5">
+					Data attribute visible ("data-visible"), makes the element always present and the fadeIn animation will not occur.
+				</p>
+			</div>
+			
+
+
+		</div>
+
+
+
+
+		
+		<script>
+			$.klAnimate();
+		</script>
+
+
+	</body>
+</html>

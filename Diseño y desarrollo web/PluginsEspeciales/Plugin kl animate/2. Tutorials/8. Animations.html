@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KL Animate</title>
+		
+	
+		<!-- jQuery, needed, but is optional if you already had a jquery on your page -->
+		<script src="static/js/jquery-2.1.4.min.js"></script>
+		
+		<!-- KL-Animate functions needed and greensock libraries -->
+		<script src="static/js/greensock.js"></script>
+		<script src="static/js/kl-animate.min.js"></script>
+		
+
+		<!-- some demo styling -->
+		<style>
+			html, body{
+				padding: 20px;
+				width: 100%;
+			}
+			h1{
+				margin-bottom: 100px;
+			}
+
+			img{
+				margin-bottom: 10px;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<h1>Animations</h1>
+			
+			<h2>Normal</h2>
+			<img src="img/square.png" class="klanimate" data-x="200" data-repeat="-1">
+			
+			<h2>elastic</h2>
+			<img src="img/square.png" class="klanimate" data-x="200" data-animation="elastic" data-repeat="-1">
+
+			<h2>bounce</h2>
+			<img src="img/square.png" class="klanimate" data-x="200" data-animation="bounce" data-repeat="-1">
+
+			<h2>slowmo</h2>
+			<img src="img/square.png" class="klanimate" data-x="200" data-animation="slowmo" data-repeat="-1">
+
+			<h2>circle</h2>
+			<img src="img/square.png" class="klanimate" data-x="200" data-animation="circle" data-repeat="-1">
+
+			<h2>back</h2>
+			<img src="img/square.png" class="klanimate" data-x="200" data-animation="back" data-repeat="-1">
+
+
+		</div>
+
+
+
+
+		
+		<script>
+			// by changin some properties here, you can modify the default behavior of 
+			// all the animations
+			$.klAnimate({
+				duration:1.5
+			});
+		</script>
+
+
+	</body>
+</html>
