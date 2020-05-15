@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Maestro</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/estilo.css">
+
+    <!-- Estilos de los recursos adicionales -->
+    <link rel="stylesheet" href="plugins/Picker/themes/default.css">
+    <link rel="stylesheet" href="plugins/Picker/themes/default.date.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Master</h1>
+        <p class="lead">Descripción del recurso.</p>
+      </div>
+
+      <!-- Editar desde aquí  -->
+      <input type="text" id="txtFecha" class="form-control fecha"/>
+      <br><br>
+      <button id="botonObtener" type="button" class="btn btn-primary">
+        Obtener valor
+      </button>
+
+
+
+      <!-- Hasta aquí modificaremos -->
+    </div>
+
+
+    <!-- Librerías adicionales -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Librerías de plugins -->
+    <script src="plugins/Picker/picker.js"></script>
+      <script src="plugins/Picker/picker.date.js"></script>
+      <script src="plugins/Picker/translations/es_ES.js"></script>
+    <!-- Archivo personalizado de Javascript -->
+    <script src="lib/curso.js"></script>
+    
+  </body>
+</html>
