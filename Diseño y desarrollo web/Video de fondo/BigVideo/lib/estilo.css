@@ -1,0 +1,7 @@
+#big-video-wrap{
+    position:fixed;
+    z-index: -1;
+}
+html,body{
+    height: 5000px;
+}
