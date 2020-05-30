@@ -1,53 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Hello, world!</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <title>Hello, world!</title>
-</head>
-
-<body>
-  <section class="bienvenidos">
-    <header class="encabezado"></header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#menuPrincipal" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#!">Aulaideal.com</a>
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#!">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Portafolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Contacto</a>
-            </li>
-          </ul>
+  <body>
+    <section class="bienvenidos">
+      <div class="container">
+        <header class="encabezado">
+          <nav class="navbar navbar-light">
+            <button
+              class="navbar-toggler pull-xs-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#menuPrincipal"
+            >
+              <span class="fas fa-bars"></span>
+            </button>
+            <a class="navbar-brand" href="#!">Aulaideal.com</a>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+              <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="texto-bienvenido text-center">
+          <p class="h5">Bienvenidos a nuestro sitio</p>
+          <h1 class="display-4">ENCANTADOS DE CONOCERTE</h1>
+          <a href="#" class="btn btn-primary btn-lg mt-3">Ponte en contacto</a>
         </div>
-      </nav>
+      </div>
+    </section>
+    <section class="quienes-somos py-3">
+      <div class="container text-center">
+        <img src="images/nosotros.svg" width="181" class="img-fluid mb-2">
+        <h2 class="h1 ">¿QUIENES SOMOS?</h2>
+        <p>Ponemos a tu alcance un servicio adaptado a tus necesidades, desde una consultoría integral con supervisión de todos y cada uno de los pasos que has de seguir para crear un negocio actual (comunicación, diseño corporativo, tecnologías...) a productos adaptados a metodologías ágiles de creación de apps diseñadas por nosotros y avaladas por nuestros años de experiencia.</p>
+        <a href="#" class="btn btn-secondary btn-lg mt-3 " data-toggle="modal" data-target="#quienes-somos">MAS INFORMACIÓN</a>
+      </div>
+    </section>
+    <section class="servicios text-center py-3">
+     
+      <div class="container">
+        <h2 class="h3 mb-5">NUESTROS SERVICIOS</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fas fa-briefcase icon"></i>
+            <h3 class="h5">Aplicaciones para la nube</h3>
+            <p>Para empresa que requiera ampliar sus plataformas de gestión.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-bullhorn icon"></i>
+            <h3 class="h5">Fábrica de software</h3>
+            <p>Servicios de mejora correctiva y evolutiva para sus aplicaciones.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="far fa-check-square icon"></i>
+            <h3 class="h5">Diseño personalizado</h3>
+            <p>Customiza hasta el último píxel de tu App. Infinitas Posibilidades.</p>
+          </div>
+        </div>
     </div>
-  </section>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/all.min.js"></script>
-</body>
+    </section>
+    <section class="ultimos-proyectos py-2 text-center">
+      <div class="container">
+        <h2 class="h3 mb-5">ULTIMOS PROYECTOS</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#">
+            <img src="images/proyecto1.svg" width="290" class="img-fluid" alt="">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+            <img src="images/proyecto2.svg" width="290" class="img-fluid" alt="">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+            <img src="images/proyecto3.svg" width="290" class="img-fluid" alt="">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+            <img src="images/proyecto4.svg" width="290" class="img-fluid" alt="">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+            <img src="images/proyecto5.svg" width="290" class="img-fluid" alt="">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+            <img src="images/proyecto6.svg" width="290" class="img-fluid" alt="">
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-center py-2">
+      <p>2016 © AULAIDEAL.COM Todos los derechos reservados</p>
+    </footer>
 
+    <div class="modal fade" id="quienes-somos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¿Quienes somos?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem atque odit vitae earum laborum consequuntur? Velit nostrum facere repellendus minus modi vitae exercitationem fuga consequatur. Officiis dolorum voluptatem nihil nesciunt!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
 </html>
