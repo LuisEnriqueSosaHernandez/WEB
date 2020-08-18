@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <style>
+       #important{
+        width: 345px;
+        height: 200px;
+        padding: 20px;
+        margin: 7px;
+        border: 15px solid blue;
+        background-color: #ff0000;
+        color: white;
+        
+       }
+
+
+    </style>
+    <script>
+     var texto = "";
+    $(document).ready(function(){
+      $("button").click(function(){
+          texto +="width de div: " + $("#important").width() + "<br>";
+          texto += "height del div: " + $("#important").height() + "<br>";
+          texto +="innerWidth de div: " + $("#important").innerWidth() + "<br>";
+          texto += "innerHeight del div: " + $("#important").innerHeight() + "<br>";;
+           texto +="outerWidth de div: " + $("#important").outerWidth() + "<br>";
+          texto += "outerHeight del div: " + $("#important").outerHeight();
+          $("#important").html(texto);
+          console.log(texto);
+      });
+         
+    }); 
+
+    
+    </script>
+</head>
+<body>  
+     
+      <div id="important"></div>
+
+      <h2>$(selector).outerWidth(): <p>retorna el ancho de un elemento incluye también el padding y border</p></h2>
+      <h2>$(selector).outerHeight(): <p>retorna el alto de un elemento incluye también el padding y border</p></h2>
+       <button id="btn1">Probar</button>
+       
+       
+</body> 
+</html>   

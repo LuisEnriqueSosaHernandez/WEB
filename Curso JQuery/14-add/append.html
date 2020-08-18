@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script>
+    var dato2;
+    $(document).ready(function(){
+      $("#btn2").click(function(){
+         dato2= $("input").val();
+         $("ul").append("<li>" + dato2 + "</li>");
+      });
+         
+    }); 
+
+    
+    </script>
+</head>
+<body>  
+      <ul>
+        <li>Insertar al final de este elemento abajo</li>         
+      </ul>  
+
+      <p>introduce dato:<input id="dato" type="text" name="dato" value="dato"></p>
+       <button id="btn2">añadir dato a la lista</button>
+       
+</body> 
+</html>   

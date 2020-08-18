@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .con1{
+            position: absolute;
+            background: #abc;
+            left: 0px;
+            top: 30px;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+        }
+        
+    </style>
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script>
+    $(document).ready(function(){
+        $("#go").click(function(){
+            $(".con1").animate({left:"+=500px"}, 2000);
+        });
+        $("#stop").click(function(){
+            $(".con1").stop();
+        });
+        $("#back").click(function(){
+            $(".con1").animate({left:"-=300px"}, 2000);
+        });
+        
+    
+    });
+    </script>
+</head>
+<body>
+       <button id="go">empezar</button>
+       <button id="stop">parada</button>
+       <button id="back">disminuir</button>
+       <div class="con1"></div>
+</body> 
+</html>   

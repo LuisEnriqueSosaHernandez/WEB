@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script>
+    	$(document).ready(function(){
+    		$("input").focus(function(){  // se ejecuta cuando pulsamos en la caja del formulario
+    			$(this).css("background-color", "#FF00BF"); // ROSA
+            });
+            $("input").blur(function(){ // se ejecuta cuando salimos de la caja del formulario y pulsamos en otro 
+                $(this).css("background-color", "#AEB404"); // campo del formulario (amarillo)
+            });
+    	});
+
+    	
+    </script>
+</head>
+<body>
+	<h1>Usuario: <input type="text" name="usuario" value="usuario" placeolder="usuario"></h1>
+    <h1>Password: <input type="text" name="password" value="password" placeolder="password"></h1>
+	
+</body>
+</html>		  

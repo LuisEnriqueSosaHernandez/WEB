@@ -1,0 +1,2 @@
+<h1>esto es una prueba de como utilizar ajax</h1>
+<p>estas dos etiquetas son de archivo txt</p>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .con1{
+            position: absolute;
+            background: #DF01D7;
+            left: 200px;
+            top: 30px;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+        
+    </style>
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script>
+    $(document).ready(function(){
+        $("#go").click(function(){
+             $(".con1").slideUp(5000)
+                       .slideDown(5000)
+                       .animate({left:"+=50px"}, 2000, function(){
+                               $(".con1").animate({left:"-=50px"}, 2000);
+                               alert("ha finalizado la animación multiple");
+                               });
+
+        });
+    }); 
+
+    
+    </script>
+</head>
+<body>
+       <button id="go">empezar</button>
+       <div class="con1"></div>
+</body> 
+</html>   

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script>
+    	$(document).ready(function(){
+    		$("p").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "#FF00BF"); //rosa cuando te posicionas en el párrafo
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "#AEB404");// amarillo cuando sales del párrafo
+                },
+                click: function(){
+                    $(this).css("background-color", "#08088A"); // azul cuando pulsas en el párrafo
+                }
+
+            });
+        });
+    	
+    </script>
+</head>
+<body>
+	<P>dependiendo del movimiento de mouse se producirá un color</P>
+	
+</body>
+</html>		  

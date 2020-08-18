@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <style>
+       .important{
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        
+       }
+    </style>
+    <script>
+ 
+    $(document).ready(function(){
+      $("button").click(function(){
+         $("span").parentsUntil("div").css({"color": "blue", "border": "2px solid orange"});
+      }); 
+         
+    }); 
+
+    
+    </script>
+</head>
+<body>  
+     
+      <div class="important"> body (great great grandparent)
+         <div class="important" style="width:500px;">div great/grandparent
+           <ul class="important"> ul grandparent
+              <li class="important">li direct parent
+                <span class="important">span</span>
+              </li>
+            </ul>
+          </div> 
+      </div>         
+      
+       <button id="btn1">Probar</button>
+</body> 
+</html>   

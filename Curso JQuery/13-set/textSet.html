@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <script>
+    $(document).ready(function(){
+        $("#go").click(function(){
+             $("#texto").text("hemos cambiado el contenido de la etiqueta");
+
+        });
+    }); 
+
+    
+    </script>
+</head>
+<body>
+      <p id="texto">estamos viendo asignar contenido con el método text()</p>
+       <button id="go">empezar</button>
+       
+</body> 
+</html>   

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <style>
+       #contenedor{
+        height: 400px;
+        width: 300px;
+        border-style: dotted dashed solid double;
+        border-color: #DF7401;
+        border-radius: 40px;
+        background-color: #01DF01;
+
+       }
+
+    </style>
+    <script>
+    var dato2;
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+           $("p").remove(".prueba");
+      });
+         
+    }); 
+
+    
+    </script>
+</head>
+<body>  
+      <div id="contenedor">
+        <h1>Aquí tenemos un elementos dentro del contenedor</h1>
+        <p>Este es el segundo elemento dentro del contenedor</p>
+        <p class="prueba" style="color:white;">Se eliminará este párrafo de la clase prueba</p>
+        <p class="prueba" style="color:white;">Este también por que pertenece a la misma clase</p>
+      </div>
+
+      
+       <button id="btn1">Eliminar con remove</button>
+       
+       
+</body> 
+</html>   

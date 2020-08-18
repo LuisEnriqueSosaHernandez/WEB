@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../jquery-3.2.0.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+    <style>
+       .important{
+        font-weight: bold;
+        font-size: xx-large;
+       }
+       .blue{
+        color: blue;
+       }
+
+
+    </style>
+    <script>
+    var dato2;
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+           $("h1, h2, p").removeClass("blue");
+           //$("div").addClass("important");
+      });
+         
+    }); 
+
+    
+    </script>
+</head>
+<body>  
+      <h1 class="blue">Cabecera</h1>
+      <h2 class="blue">Otra cabecera</h2>
+      <p class="blue">párrafo del ejemplo</p>
+      <div>Esto es un contenedor</div>
+
+      
+       <button id="btn1">Probar</button>
+       
+       
+</body> 
+</html>   
